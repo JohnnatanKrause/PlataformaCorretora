@@ -53,29 +53,8 @@ O projeto será utilizado como estudo prático no curso de **Tecnologia em Anál
 ## 📂 Estrutura do Projeto
 
 
+![Estrutura do Projeto](assets/imagens/estrutura-projeto.png)
 
-PlataformaCorretora/
-│
-├── README.md                # Apresentação e resumo do projeto
-├── /docs                    # Documentação acadêmica
-│   ├── planejamento.md       # Cronograma e etapas detalhadas
-│   ├── termo_autorizacao.md  # Documento oficial da corretora
-│   ├── contrato_intermediacao.md
-│   └── relatorio_extensao.md # Relatório final para faculdade
-│
-├── /src                     # Código da plataforma
-│   ├── index.html            # Página inicial
-│   ├── style.css             # Estilos
-│   ├── script.js             # Lógica da busca e cadastros
-│   └── imoveis.json          # Base inicial de imóveis
-│
-└── /assets                  # Imagens e ícones
-    └── imagens/
-
-
-
-└── /assets                  # Imagens e ícones
-└── imagens/
 
 ## 🧰 Ferramentas Utilizadas
 - **HTML, CSS e JavaScript** → estrutura e lógica da plataforma.  
