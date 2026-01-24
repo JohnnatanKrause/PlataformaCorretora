@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Área da Corretora - Karina Ruiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="assets/logos/kr-logo-principal.png" alt="Karina Ruiz - Corretora de Imóveis">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Imóveis Públicos</a></li>
+        <li><a href="admin.html">Área da Corretora</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Login simples -->
+  <main>
+    <h1>Área Restrita da Corretora</h1>
+    <div id="login-container">
+      <input type="password" id="senha" placeholder="Digite a senha">
+      <button onclick="login()">Entrar</button>
+    </div>
+
+    <div id="admin-container" class="grid" style="display:none;"></div>
+  </main>
+
+  <footer>
+    <p>© 2026 Karina Ruiz - Corretora de Imóveis</p>
+  </footer>
+
+  <script src="admin.js"></script>
+</body>
+</html>

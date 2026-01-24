@@ -159,3 +159,27 @@ Métricas instaladas e validadas.
 Termo e carta (PDFs oficiais) anexados.
 
 Relatório final compilado conforme roteiro.
+
+
+PlataformaCorretora/
+│
+├── README.md                      # Apresentação e resumo do projeto
+│
+├── /docs                          # Documentação acadêmica
+│   ├── planejamento.md             # Cronograma e etapas detalhadas (guia em Markdown)
+│   ├── relatorio_extensao.md       # Estrutura do relatório final (guia em Markdown)
+│   ├── termo_autorizacao.md        # Guia em Markdown para uso do termo oficial
+│   ├── carta_apresentacao.md       # Guia em Markdown para uso da carta oficial
+│   ├── roteiro_pex.pdf             # Roteiro oficial fornecido pela faculdade
+│   ├── carta_apresentacao.pdf      # Documento oficial de apresentação (PDF)
+│   └── termo_autorizacao.pdf       # Documento oficial para assinatura da corretora (PDF)
+│
+├── /src                           # Código da plataforma
+│   ├── index.html                  # Página inicial
+│   ├── style.css                   # Estilos
+│   ├── script.js                   # Lógica da busca e cadastros
+│   └── imoveis.json                # Base inicial de imóveis
+│
+└── /assets                        # Imagens e ícones
+    └── imagens/                    # Pasta para armazenar imagens dos imóveis e figuras
+        └── estrutura-projeto.png   # Imagem da estrutura usada no README
