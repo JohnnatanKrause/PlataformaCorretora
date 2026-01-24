@@ -4,35 +4,41 @@
         "dados_publicos": {
             "tipo_imovel": "Apartamento",
             "objetivo": "Venda",
-            "nome": "Apartamento Grand Hudson",
+            "nome": "Residencial Grand Hudson",
             "cidade": "Cascavel",
             "estado": "PR",
-            "endereco": "Rua Paraguai, 427, AP 14, 1º andar",
-            "area_total": 134.61,
-            "area_util": 85.14,
-            "quartos": 3,
-            "banheiros": 2,
-            "vagas": 2,
-            "garagens": [
-                "23",
-                "24"
+            "bairro": "Centro",
+            "endereco": "Rua Souza Naves",
+            "numero": "1200",
+            "imagem": "../assets/imagens/grand-hudson.jpg",
+            "unidades": [
+                {
+                    "numero": "801",
+                    "andar": 8,
+                    "quartos": 3,
+                    "banheiros": 2,
+                    "vagas": 2,
+                    "preco": 520000,
+                    "descricao": "Apartamento moderno com sacada gourmet.",
+                    "fotos": [
+                        "../assets/imagens/grand-hudson-801-sala.jpg",
+                        "../assets/imagens/grand-hudson-801-cozinha.jpg"
+                    ]
+                },
+                {
+                    "numero": "905",
+                    "andar": 9,
+                    "quartos": 3,
+                    "banheiros": 2,
+                    "vagas": 2,
+                    "preco": 540000,
+                    "descricao": "Apartamento no 9º andar com excelente iluminação.",
+                    "fotos": [
+                        "../assets/imagens/grand-hudson-905-sala.jpg",
+                        "../assets/imagens/grand-hudson-905-quarto.jpg"
+                    ]
+                }
             ],
-            "preco": 560000,
-            "condominio": 450,
-            "descricao": "Apartamento semimobiliado com cozinha planejada, sala integrada, suíte casal, sacada com churrasqueira e 2 vagas de garagem.",
-            "diferenciais_imovel": [
-                "Cozinha planejada com móveis sob medida",
-                "Sala de estar e jantar planejada",
-                "Suíte casal com armários e ar-condicionado",
-                "Sacada com churrasqueira"
-            ],
-            "diferenciais_condominio": [
-                "Salão de festas",
-                "Área kids",
-                "Elevador",
-                "Câmeras de segurança 24h"
-            ],
-            "imagem": "assets/imagens/grand-hudson.jpg",
             "contato": {
                 "telefone": "+55 45 9 3300-2811",
                 "whatsapp": "https://wa.me/5545933002811"
@@ -40,10 +46,8 @@
         },
         "dados_internos": {
             "proprietario": "Johnnatan Krause",
-            "telefone": "+55 45 9 8821-3899",
-            "email": "johnnatankrause@gmail.com",
             "matricula": "123456-PR",
-            "observacoes": "Aceita permuta ou valor menor"
+            "observacoes": "Disponível para visitas"
         }
     },
     {
@@ -51,36 +55,41 @@
         "dados_publicos": {
             "tipo_imovel": "Apartamento",
             "objetivo": "Venda",
-            "nome": "Apartamento Abraham Lincoln",
+            "nome": "Edifício Abraham Lincoln",
             "cidade": "Cascavel",
             "estado": "PR",
-            "endereco": "Rua Natal, 706, AP 203, Centro",
-            "area_total": 222.83,
-            "area_util": 164.49,
-            "quartos": 3,
-            "banheiros": 4,
-            "vagas": 2,
-            "garagens": [
-                "12",
-                "13"
+            "bairro": "Centro",
+            "endereco": "Av. Brasil",
+            "numero": "2000",
+            "imagem": "../assets/imagens/abraham-lincoln.jpg",
+            "unidades": [
+                {
+                    "numero": "801",
+                    "andar": 8,
+                    "quartos": 3,
+                    "banheiros": 2,
+                    "vagas": 2,
+                    "preco": 580000,
+                    "descricao": "Apartamento no 8º andar com vista privilegiada.",
+                    "fotos": [
+                        "../assets/imagens/abraham-lincoln-801-sala.jpg",
+                        "../assets/imagens/abraham-lincoln-801-cozinha.jpg"
+                    ]
+                },
+                {
+                    "numero": "905",
+                    "andar": 9,
+                    "quartos": 3,
+                    "banheiros": 2,
+                    "vagas": 2,
+                    "preco": 600000,
+                    "descricao": "Apartamento no 9º andar, excelente iluminação natural.",
+                    "fotos": [
+                        "../assets/imagens/abraham-lincoln-905-sala.jpg",
+                        "../assets/imagens/abraham-lincoln-905-quarto.jpg"
+                    ]
+                }
             ],
-            "preco": 1200000,
-            "condominio": 800,
-            "descricao": "Apartamento Garden semimobiliado no Edifício Abraham Lincoln, com amplo espaço, sacada com churrasqueira e suítes completas.",
-            "diferenciais_imovel": [
-                "Suíte casal com hidromassagem",
-                "Sala de estar e jantar com lavabo",
-                "Sacada ampla com churrasqueira",
-                "Infraestrutura de aspiração central"
-            ],
-            "diferenciais_condominio": [
-                "Cinema privativo",
-                "Academia equipada",
-                "Piscinas adulto e infantil",
-                "Salão de festas gourmet",
-                "Portaria presencial e remota"
-            ],
-            "imagem": "assets/imagens/abraham-lincoln.jpg",
             "contato": {
                 "telefone": "+55 45 9 3300-2811",
                 "whatsapp": "https://wa.me/5545933002811"
@@ -88,10 +97,8 @@
         },
         "dados_internos": {
             "proprietario": "Johnnatan Krause",
-            "telefone": "+55 45 9 8821-3899",
-            "email": "johnnatankrause@gmail.com",
-            "matricula": "7891011-PR",
-            "observacoes": "Aceita permuta como parte do pagamento"
+            "matricula": "654321-PR",
+            "observacoes": "Unidade já vendida, manter para histórico"
         }
     },
     {
@@ -99,33 +106,41 @@
         "dados_publicos": {
             "tipo_imovel": "Apartamento",
             "objetivo": "Venda",
-            "nome": "Apartamento Palladium Residence",
-            "cidade": "Londrina",
+            "nome": "Edifício Palladium Residence",
+            "cidade": "Cascavel",
             "estado": "PR",
-            "endereco": "Rua Paranaguá, 199, AP 801",
-            "area_total": 162.62,
-            "area_util": 103.64,
-            "quartos": 5,
-            "banheiros": 3,
-            "vagas": 2,
-            "garagens": [
-                "45",
-                "46"
+            "bairro": "Centro",
+            "endereco": "Rua Paraná",
+            "numero": "500",
+            "imagem": "../assets/imagens/palladium-residence.jpg",
+            "unidades": [
+                {
+                    "numero": "801",
+                    "andar": 8,
+                    "quartos": 3,
+                    "banheiros": 2,
+                    "vagas": 2,
+                    "preco": 650000,
+                    "descricao": "Apartamento no 8º andar com vista panorâmica.",
+                    "fotos": [
+                        "../assets/imagens/palladium-801-sala.jpg",
+                        "../assets/imagens/palladium-801-cozinha.jpg"
+                    ]
+                },
+                {
+                    "numero": "1101",
+                    "andar": 11,
+                    "quartos": 3,
+                    "banheiros": 2,
+                    "vagas": 2,
+                    "preco": 680000,
+                    "descricao": "Apartamento no 11º andar, excelente iluminação natural.",
+                    "fotos": [
+                        "../assets/imagens/palladium-1101-sala.jpg",
+                        "../assets/imagens/palladium-1101-quarto.jpg"
+                    ]
+                }
             ],
-            "preco": 450000,
-            "condominio": 600,
-            "descricao": "Apartamento amplo com 4 quartos, 1 suíte, banheiro social e dependência de empregada com banheiro.",
-            "diferenciais_imovel": [
-                "Sala para dois ambientes",
-                "Cozinha planejada",
-                "Área de serviço"
-            ],
-            "diferenciais_condominio": [
-                "Portaria 24h",
-                "Elevador",
-                "Salão de festas"
-            ],
-            "imagem": "assets/imagens/palladium-residence.jpg",
             "contato": {
                 "telefone": "+55 45 9 3300-2811",
                 "whatsapp": "https://wa.me/5545933002811"
@@ -133,43 +148,28 @@
         },
         "dados_internos": {
             "proprietario": "Johnnatan Krause",
-            "telefone": "+55 45 9 8821-3899",
-            "email": "johnnatankrause@gmail.com",
-            "matricula": "121314-PR",
-            "observacoes": "Aceita negociação até R$ 430.000,00"
+            "matricula": "7891011-PR",
+            "observacoes": "Possui várias unidades disponíveis para venda"
         }
     },
     {
         "codigo": "IMV004",
         "dados_publicos": {
-            "tipo_imovel": "Cota Multipropriedade",
+            "tipo_imovel": "Apartamento",
             "objetivo": "Venda",
-            "nome": "Ilhas do Lago Eco Resort - Cota F404/24",
-            "cidade": "Caldas Novas",
-            "estado": "GO",
-            "endereco": "Avenida Caminho do Lago, nº 4.600, Jardim Interlago, CEP 75690-000",
-            "area_total": null,
-            "area_util": null,
+            "nome": "Ilhas do Lago",
+            "cidade": "Cascavel",
+            "estado": "PR",
+            "bairro": "Pioneiros",
+            "endereco": "Rua das Flores",
+            "numero": "300",
+            "imagem": "../assets/imagens/ilhas-do-lago.jpg",
+            "area_util": 85,
             "quartos": 2,
             "banheiros": 2,
-            "vagas": null,
-            "garagens": null,
-            "preco": 43000,
-            "condominio": 80.40,
-            "descricao": "Cota multipropriedade com direito a 7 dias anuais de uso em resort completo.",
-            "diferenciais_imovel": [
-                "Apartamento mobiliado",
-                "Ar-condicionado",
-                "Varanda com vista privilegiada"
-            ],
-            "diferenciais_condominio": [
-                "Parque aquático com piscinas termais",
-                "Sauna e academia",
-                "Salão de jogos",
-                "Brinquedoteca",
-                "Restaurante e bar"
-            ],
-            "imagem": "assets/imagens/ilhas-do-lago.jpg",
+            "vagas": 1,
+            "preco": 450000,
+            "descricao": "Apartamento compacto e funcional, ideal para jovens casais.",
             "contato": {
                 "telefone": "+55 45 9 3300-2811",
                 "whatsapp": "https://wa.me/5545933002811"
@@ -177,42 +177,28 @@
         },
         "dados_internos": {
             "proprietario": "Johnnatan Krause",
-            "telefone": "+55 45 9 8821-3899",
-            "email": "johnnatankrause@gmail.com",
-            "matricula": "151617-GO",
-            "observacoes": "Cota multipropriedade com direito a 7 dias anuais de uso"
+            "matricula": "111213-PR",
+            "observacoes": "Disponível para financiamento"
         }
     },
     {
         "codigo": "IMV005",
         "dados_publicos": {
             "tipo_imovel": "Casa",
-            "objetivo": "Aluguel",
+            "objetivo": "Venda",
             "nome": "Casa Jardim das Américas",
-            "cidade": "Curitiba",
+            "cidade": "Cascavel",
             "estado": "PR",
-            "endereco": "Rua das Palmeiras, 120, Jardim das Américas",
-            "area_total": 300,
-            "area_util": 220,
+            "bairro": "Jardim das Américas",
+            "endereco": "Rua das Palmeiras",
+            "numero": "50",
+            "imagem": "../assets/imagens/casa-jardim-americas-50.jpg",
+            "area_util": 180,
             "quartos": 4,
             "banheiros": 3,
-            "vagas": 3,
-            "garagens": [
-                "01",
-                "02",
-                "03"
-            ],
-            "preco": 4500,
-            "condominio": null,
-            "descricao": "Casa ampla em bairro nobre de Curitiba, com jardim, churrasqueira e garagem para 3 carros.",
-            "diferenciais_imovel": [
-                "Cozinha planejada",
-                "Sala com lareira",
-                "Churrasqueira coberta",
-                "Jardim amplo"
-            ],
-            "diferenciais_condominio": null,
-            "imagem": "assets/imagens/casa-jardim-americas.jpg",
+            "vagas": 2,
+            "preco": 750000,
+            "descricao": "Casa espaçosa com área gourmet e quintal amplo.",
             "contato": {
                 "telefone": "+55 45 9 3300-2811",
                 "whatsapp": "https://wa.me/5545933002811"
@@ -220,10 +206,8 @@
         },
         "dados_internos": {
             "proprietario": "Johnnatan Krause",
-            "telefone": "+55 45 9 8821-3899",
-            "email": "johnnatankrause@gmail.com",
-            "matricula": "181920-PR",
-            "observacoes": "Disponível para aluguel anual, aceita negociação no valor do aluguel"
+            "matricula": "141516-PR",
+            "observacoes": "Aceita permuta"
         }
     },
     {
@@ -231,26 +215,16 @@
         "dados_publicos": {
             "tipo_imovel": "Terreno",
             "objetivo": "Venda",
-            "nome": "Terreno Comercial Avenida Brasil",
+            "nome": "Terreno na Av. Brasil",
             "cidade": "Cascavel",
             "estado": "PR",
-            "endereco": "Avenida Brasil, nº 1500, Centro",
-            "area_total": 500,
-            "area_util": 500,
-            "quartos": null,
-            "banheiros": null,
-            "vagas": null,
-            "garagens": null,
-            "preco": 750000,
-            "condominio": null,
-            "descricao": "Terreno comercial localizado na Avenida Brasil, região central de Cascavel, ideal para construção de prédio ou comércio.",
-            "diferenciais_imovel": [
-                "Localização privilegiada",
-                "Área plana",
-                "Documentação regularizada"
-            ],
-            "diferenciais_condominio": null,
-            "imagem": "assets/imagens/terreno-avenida-brasil.jpg",
+            "bairro": "Centro",
+            "endereco": "Av. Brasil",
+            "numero": "3000",
+            "imagem": "../assets/imagens/terreno-avenida-brasil-3000.jpg",
+            "area_util": 400,
+            "preco": 320000,
+            "descricao": "Terreno bem localizado, ideal para construção comercial.",
             "contato": {
                 "telefone": "+55 45 9 3300-2811",
                 "whatsapp": "https://wa.me/5545933002811"
@@ -258,10 +232,8 @@
         },
         "dados_internos": {
             "proprietario": "Johnnatan Krause",
-            "telefone": "+55 45 9 8821-3899",
-            "email": "johnnatankrause@gmail.com",
-            "matricula": "212223-PR",
-            "observacoes": "Aceita propostas e permuta parcial em imóveis residenciais"
+            "matricula": "171819-PR",
+            "observacoes": "Documentação em dia"
         }
     }
 ]
