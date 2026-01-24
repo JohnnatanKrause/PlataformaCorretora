@@ -43,7 +43,7 @@
                 "../assets/imagens/grand-hudson/ap14/21.jpg"
             ],
             "contato": {
-                "Corretor(a)": "Karina Riuz",
+                "corretor(a)": "Karina Riuz",
                 "telefone": "+55 45 9 3300-2811",
                 "whatsapp": "https://wa.me/5545933002811"
             }
@@ -57,329 +57,404 @@
         }
     },
     {
-        "codigo": "IMV002",
-        "dados_publicos": {
-            "tipo_imovel": "Apartamento",
-            "objetivo": "Venda",
-            "nome": "Residencial Grand Hudson",
-            "cidade": "Cascavel",
-            "estado": "PR",
-            "bairro": "Centro",
-            "endereco": "Rua Paraguai",
-            "numero": "427 - AP 29 - 2º Andar",
-            "imagem": "../assets/imagens/grand-hudson/ap29/principal.jpg",
-            "area_util": 85.14,
-            "quartos": 3,
-            "banheiros": 2,
-            "vagas": 2,
-            "preco": 650000,
-            "condominio": 450,
-            "garagens": ["13", "14"],
-            "descricao": "Apartamento semimobiliado no Edifício Residencial Grand Hudson, com 3 quartos (1 suíte), 2 vagas de garagem, cozinha planejada com cooktp, geladeira,lava louças e coifa, Ar condicionados em todos os comodos, Suite planejada, sala planejada e com dois ambientes e sacada com churrasqueira.",
-            "fotos": [
-                "../assets/imagens/grand-hudson/ap29/01.jpg",
-                "../assets/imagens/grand-hudson/ap29/02.jpg",
-                "../assets/imagens/grand-hudson/ap29/03.jpg",
-                "../assets/imagens/grand-hudson/ap29/04.jpg",
-                "../assets/imagens/grand-hudson/ap29/05.jpg",
-                "../assets/imagens/grand-hudson/ap29/06.jpg",
-                "../assets/imagens/grand-hudson/ap29/07.jpg",
-                "../assets/imagens/grand-hudson/ap29/08.jpg",
-                "../assets/imagens/grand-hudson/ap29/09.jpg",
-                "../assets/imagens/grand-hudson/ap29/10.jpg",
-                "../assets/imagens/grand-hudson/ap29/11.jpg",
-                "../assets/imagens/grand-hudson/ap29/12.jpg",
-                "../assets/imagens/grand-hudson/ap29/13.jpg",
-                "../assets/imagens/grand-hudson/ap29/14.jpg",
-                "../assets/imagens/grand-hudson/ap29/15.jpg",
-                "../assets/imagens/grand-hudson/ap29/16.jpg",
-                "../assets/imagens/grand-hudson/ap29/17.jpg",
-                "../assets/imagens/grand-hudson/ap29/18.jpg",
-                "../assets/imagens/grand-hudson/ap29/19.jpg",
-                "../assets/imagens/grand-hudson/ap29/20.jpg",
-                "../assets/imagens/grand-hudson/ap29/21.jpg"
-            ],
-            "contato": {
-                "Corretor(a)": "Karina Riuz",
+    "codigo": "IMV002",
+    "dados_publicos": {
+        "tipo_imovel": "Apartamento",
+        "objetivo": "Venda",
+        "nome": "Residencial Grand Hudson",
+        "cidade": "Cascavel",
+        "estado": "PR",
+        "bairro": "Centro",
+        "endereco": "Rua Paraguai",
+        "numero": "427 - AP 29 - 2º Andar",
+        "imagem": "../assets/imagens/grand-hudson/ap29/principal.jpg",
+        "area_util": 85.14,
+        "quartos": 3,
+        "banheiros": 2,
+        "vagas": 2,
+        "preco": 650000,
+        "condominio": 450,
+        "garagens": ["13", "14"],
+        "descricao": "Apartamento semimobiliado no Edifício Residencial Grand Hudson, com 3 quartos (1 suíte), 2 vagas de garagem, cozinha planejada com cooktp, geladeira, lava louças e coifa, Ar condicionados em todos os cômodos, suíte planejada, sala planejada com dois ambientes e sacada com churrasqueira.",
+        "fotos": [
+            "../assets/imagens/grand-hudson/ap29/01.jpg",
+            "../assets/imagens/grand-hudson/ap29/02.jpg",
+            "../assets/imagens/grand-hudson/ap29/03.jpg",
+            "../assets/imagens/grand-hudson/ap29/04.jpg",
+            "../assets/imagens/grand-hudson/ap29/05.jpg",
+            "../assets/imagens/grand-hudson/ap29/06.jpg",
+            "../assets/imagens/grand-hudson/ap29/07.jpg",
+            "../assets/imagens/grand-hudson/ap29/08.jpg",
+            "../assets/imagens/grand-hudson/ap29/09.jpg",
+            "../assets/imagens/grand-hudson/ap29/10.jpg",
+            "../assets/imagens/grand-hudson/ap29/11.jpg",
+            "../assets/imagens/grand-hudson/ap29/12.jpg",
+            "../assets/imagens/grand-hudson/ap29/13.jpg",
+            "../assets/imagens/grand-hudson/ap29/14.jpg",
+            "../assets/imagens/grand-hudson/ap29/15.jpg",
+            "../assets/imagens/grand-hudson/ap29/16.jpg",
+            "../assets/imagens/grand-hudson/ap29/17.jpg",
+            "../assets/imagens/grand-hudson/ap29/18.jpg",
+            "../assets/imagens/grand-hudson/ap29/19.jpg",
+            "../assets/imagens/grand-hudson/ap29/20.jpg",
+            "../assets/imagens/grand-hudson/ap29/21.jpg"
+        ],
+        "contato": {
+                "corretor(a)": "Karina Riuz",
                 "telefone": "+55 45 9 3300-2811",
                 "whatsapp": "https://wa.me/5545933002811"
             }
         },
         "dados_internos": {
-            "proprietario": "Maria Oliveira da Silva",
-            "telefone": "+55 45 9 9987-6543",
-            "email": "mariaoliveiradasilva@gmail.com",  
+            "proprietario": "Johnnatan Krause Ribeiro Moreno",
+            "telefone": "+55 45 9 8821-3899",
+            "email": "johnnatankrause@gmail.com",
+            "matricula": "MAT-29-PR",
+            "observacoes": "Apartamento desocupado, Disponível para visitas!"
+        }
+    },
+    {
+    "codigo": "IMV003",
+    "dados_publicos": {
+        "tipo_imovel": "Apartamento",
+        "objetivo": "Venda",
+        "nome": "Edifício Abraham Lincoln",
+        "cidade": "Cascavel",
+        "estado": "PR",
+        "bairro": "Centro",
+        "endereco": "Rua Natal",
+        "numero": "706 - AP 203",
+        "imagem": "../assets/imagens/abraham-lincoln/ap203/principal.jpg",
+        "area_util": 165,
+        "quartos": 3,
+        "banheiros": 5,
+        "vagas": 2,
+        "preco": 1680000,
+        "descricao": "Apartamento no 2º andar com vista privilegiada.",
+        "fotos": [
+            "../assets/imagens/abraham-lincoln/ap203/01.jpg",
+            "../assets/imagens/abraham-lincoln/ap203/02.jpg",
+            "../assets/imagens/abraham-lincoln/ap203/03.jpg",
+            "../assets/imagens/abraham-lincoln/ap203/04.jpg",
+            "../assets/imagens/abraham-lincoln/ap203/05.jpg",
+            "../assets/imagens/abraham-lincoln/ap203/06.jpg",
+            "../assets/imagens/abraham-lincoln/ap203/07.jpg",
+            "../assets/imagens/abraham-lincoln/ap203/08.jpg",
+            "../assets/imagens/abraham-lincoln/ap203/09.jpg",
+            "../assets/imagens/abraham-lincoln/ap203/10.jpg",
+            "../assets/imagens/abraham-lincoln/ap203/11.jpg",
+            "../assets/imagens/abraham-lincoln/ap203/12.jpg",
+            "../assets/imagens/abraham-lincoln/ap203/13.jpg",
+            "../assets/imagens/abraham-lincoln/ap203/14.jpg",
+            "../assets/imagens/abraham-lincoln/ap203/15.jpg",
+            "../assets/imagens/abraham-lincoln/ap203/16.jpg",
+            "../assets/imagens/abraham-lincoln/ap203/17.jpg",
+            "../assets/imagens/abraham-lincoln/ap203/18.jpg",
+            "../assets/imagens/abraham-lincoln/ap203/19.jpg",
+            "../assets/imagens/abraham-lincoln/ap203/20.jpg",
+            "../assets/imagens/abraham-lincoln/ap203/21.jpg",
+            "../assets/imagens/abraham-lincoln/ap203/22.jpg"
+        ],
+        "contato": {
+                "corretor(a)": "Karina Riuz",
+                "telefone": "+55 45 9 3300-2811",
+                "whatsapp": "https://wa.me/5545933002811"
+            }
+        },
+        "dados_internos": {
+            "proprietario": "Johnnatan Krause Ribeiro Moreno",
+            "telefone": "+55 45 9 8821-3899",
+            "email": "johnnatankrause@gmail.com",
+            "matricula": "MAT-203-PR",
+            "observacoes": "Apartamento desocupado, Disponível para visitas!"
+        }
+    },
+    {
+    "codigo": "IMV004",
+    "dados_publicos": {
+        "tipo_imovel": "Apartamento",
+        "objetivo": "Venda",
+        "nome": "Edifício Abraham Lincoln",
+        "cidade": "Cascavel",
+        "estado": "PR",
+        "bairro": "Centro",
+        "endereco": "Rua Natal",
+        "numero": "706 - AP 905",
+        "imagem": "../assets/imagens/abraham-lincoln/ap905/principal.jpg",
+        "area_util": 134,
+        "quartos": 3,
+        "banheiros": 5,
+        "vagas": 2,
+        "preco": 1850000,
+        "descricao": "Apartamento no 9º andar, excelente iluminação natural.",
+        "fotos": [
+            "../assets/imagens/abraham-lincoln/ap905/01.jpg",
+            "../assets/imagens/abraham-lincoln/ap905/02.jpg",
+            "../assets/imagens/abraham-lincoln/ap905/03.jpg",
+            "../assets/imagens/abraham-lincoln/ap905/04.jpg",
+            "../assets/imagens/abraham-lincoln/ap905/05.jpg",
+            "../assets/imagens/abraham-lincoln/ap905/06.jpg",
+            "../assets/imagens/abraham-lincoln/ap905/07.jpg",
+            "../assets/imagens/abraham-lincoln/ap905/08.jpg",
+            "../assets/imagens/abraham-lincoln/ap905/09.jpg",
+            "../assets/imagens/abraham-lincoln/ap905/10.jpg",
+            "../assets/imagens/abraham-lincoln/ap905/11.jpg",
+            "../assets/imagens/abraham-lincoln/ap905/12.jpg",
+            "../assets/imagens/abraham-lincoln/ap905/13.jpg",
+            "../assets/imagens/abraham-lincoln/ap905/14.jpg",
+            "../assets/imagens/abraham-lincoln/ap905/15.jpg",
+            "../assets/imagens/abraham-lincoln/ap905/16.jpg",
+            "../assets/imagens/abraham-lincoln/ap905/17.jpg",
+            "../assets/imagens/abraham-lincoln/ap905/18.jpg",
+            "../assets/imagens/abraham-lincoln/ap905/19.jpg",
+            "../assets/imagens/abraham-lincoln/ap905/20.jpg",
+            "../assets/imagens/abraham-lincoln/ap905/21.jpg",
+            "../assets/imagens/abraham-lincoln/ap905/22.jpg"
+        ],
+        "contato": {
+                "corretor(a)": "Karina Riuz",
+                "telefone": "+55 45 9 3300-2811",
+                "whatsapp": "https://wa.me/5545933002811"
+            }
+        },
+        "dados_internos": {
+            "proprietario": "Johnnatan Krause Ribeiro Moreno",
+            "telefone": "+55 45 9 8821-3899",
+            "email": "johnnatankrause@gmail.com",
             "matricula": "MAT-905-PR",
-            "observacoes": "Aceita financiamento"
+            "observacoes": "Apartamento desocupado, Disponível para visitas!"
         }
     },
     {
-        "codigo": "IMV003",
-        "dados_publicos": {
-            "tipo_imovel": "Apartamento",
-            "objetivo": "Venda",
-            "nome": "Edifício Abraham Lincoln",
-            "cidade": "Cascavel",
-            "estado": "PR",
-            "bairro": "Centro",
-            "endereco": "Rua Natal",
-            "numero": "706 - AP 203",
-            "imagem": "../assets/imagens/abraham-lincoln/ap203/principal.jpg",
-            "area_util": 165,
-            "quartos": 3,
-            "banheiros": 5,
-            "vagas": 2,
-            "preco": 1680000,
-            "descricao": "Apartamento no 2º andar com vista privilegiada.",
-            "fotos": [
-                "../assets/imagens/abraham-lincoln/ap203/01.jpg",
-                "../assets/imagens/abraham-lincoln/ap203/02.jpg",
-                "../assets/imagens/abraham-lincoln/ap203/03.jpg",
-                "../assets/imagens/abraham-lincoln/ap203/04.jpg",
-                "../assets/imagens/abraham-lincoln/ap203/05.jpg",
-                "../assets/imagens/abraham-lincoln/ap203/06.jpg",
-                "../assets/imagens/abraham-lincoln/ap203/07.jpg",
-                "../assets/imagens/abraham-lincoln/ap203/08.jpg",
-                "../assets/imagens/abraham-lincoln/ap203/09.jpg",
-                "../assets/imagens/abraham-lincoln/ap203/10.jpg",
-                "../assets/imagens/abraham-lincoln/ap203/11.jpg",
-                "../assets/imagens/abraham-lincoln/ap203/12.jpg",
-                "../assets/imagens/abraham-lincoln/ap203/13.jpg",
-                "../assets/imagens/abraham-lincoln/ap203/14.jpg",
-                "../assets/imagens/abraham-lincoln/ap203/15.jpg",
-                "../assets/imagens/abraham-lincoln/ap203/16.jpg",
-                "../assets/imagens/abraham-lincoln/ap203/17.jpg",
-                "../assets/imagens/abraham-lincoln/ap203/18.jpg",
-                "../assets/imagens/abraham-lincoln/ap203/19.jpg",
-                "../assets/imagens/abraham-lincoln/ap203/20.jpg",
-                "../assets/imagens/abraham-lincoln/ap203/21.jpg",
-                "../assets/imagens/abraham-lincoln/ap203/22.jpg"
-            ],
-            "contato": {
+    "codigo": "IMV005",
+    "dados_publicos": {
+        "tipo_imovel": "Apartamento",
+        "objetivo": "Venda",
+        "nome": "Edifício Palladium Residence",
+        "cidade": "Cascavel",
+        "estado": "PR",
+        "bairro": "Centro",
+        "endereco": "Rua Paranagua",
+        "numero": "199 - AP 801",
+        "imagem": "../assets/imagens/palladium-residence/ap801/principal.jpg",
+        "area_util": 130,
+        "quartos": 4,
+        "banheiros": 3,
+        "vagas": 2,
+        "preco": 550000,
+        "descricao": "Apartamento no 8º andar com vista privilegiada, todo planejado.",
+        "fotos": [
+            "../assets/imagens/palladium-residence/ap801/01.jpg",
+            "../assets/imagens/palladium-residence/ap801/02.jpg",
+            "../assets/imagens/palladium-residence/ap801/03.jpg",
+            "../assets/imagens/palladium-residence/ap801/04.jpg",
+            "../assets/imagens/palladium-residence/ap801/05.jpg",
+            "../assets/imagens/palladium-residence/ap801/06.jpg",
+            "../assets/imagens/palladium-residence/ap801/07.jpg",
+            "../assets/imagens/palladium-residence/ap801/08.jpg",
+            "../assets/imagens/palladium-residence/ap801/09.jpg",
+            "../assets/imagens/palladium-residence/ap801/10.jpg",
+            "../assets/imagens/palladium-residence/ap801/11.jpg",
+            "../assets/imagens/palladium-residence/ap801/12.jpg",
+            "../assets/imagens/palladium-residence/ap801/13.jpg",
+            "../assets/imagens/palladium-residence/ap801/14.jpg",
+            "../assets/imagens/palladium-residence/ap801/15.jpg"
+        ],
+        "contato": {
+                "corretor(a)": "Karina Riuz",
                 "telefone": "+55 45 9 3300-2811",
                 "whatsapp": "https://wa.me/5545933002811"
             }
         },
         "dados_internos": {
-            "proprietario": "João Pereira",
-            "matricula": "MAT-AL203-PR",
-            "observacoes": "Unidade disponível"
+            "proprietario": "Johnnatan Krause Ribeiro Moreno",
+            "telefone": "+55 45 9 8821-3899",
+            "email": "johnnatankrause@gmail.com",
+            "matricula": "MAT-801-PR",
+            "observacoes": "Apartamento desocupado, Disponível para visitas!"
         }
     },
     {
-        "codigo": "IMV004",
-        "dados_publicos": {
-            "tipo_imovel": "Apartamento",
-            "objetivo": "Venda",
-            "nome": "Edifício Abraham Lincoln",
-            "cidade": "Cascavel",
-            "estado": "PR",
-            "bairro": "Centro",
-            "endereco": "Rua Natal",
-            "numero": "706 - AP 905",
-            "imagem": "../assets/imagens/abraham-lincoln/ap905/principal.jpg",
-            "area_util": 134,
-            "quartos": 3,
-            "banheiros": 5,
-            "vagas": 2,
-            "preco": 1850000,
-            "descricao": "Apartamento no 9º andar, excelente iluminação natural.",
-            "fotos": [
-                "../assets/imagens/abraham-lincoln/ap905/01.jpg",
-                "../assets/imagens/abraham-lincoln/ap905/02.jpg",
-                "../assets/imagens/abraham-lincoln/ap905/03.jpg",
-                "../assets/imagens/abraham-lincoln/ap905/04.jpg",
-                "../assets/imagens/abraham-lincoln/ap905/05.jpg",
-                "../assets/imagens/abraham-lincoln/ap905/06.jpg",
-                "../assets/imagens/abraham-lincoln/ap905/07.jpg",
-                "../assets/imagens/abraham-lincoln/ap905/08.jpg",
-                "../assets/imagens/abraham-lincoln/ap905/09.jpg",
-                "../assets/imagens/abraham-lincoln/ap905/10.jpg",
-                "../assets/imagens/abraham-lincoln/ap905/11.jpg",
-                "../assets/imagens/abraham-lincoln/ap905/12.jpg",
-                "../assets/imagens/abraham-lincoln/ap905/13.jpg",
-                "../assets/imagens/abraham-lincoln/ap905/14.jpg",
-                "../assets/imagens/abraham-lincoln/ap905/15.jpg",
-                "../assets/imagens/abraham-lincoln/ap905/16.jpg",
-                "../assets/imagens/abraham-lincoln/ap905/17.jpg",
-                "../assets/imagens/abraham-lincoln/ap905/18.jpg",
-                "../assets/imagens/abraham-lincoln/ap905/19.jpg",
-                "../assets/imagens/abraham-lincoln/ap905/20.jpg",
-                "../assets/imagens/abraham-lincoln/ap905/21.jpg",
-                "../assets/imagens/abraham-lincoln/ap905/22.jpg"
-            ],
-            "contato": {
-                "telefone": "+55 45 9 3300-2811",
-                "whatsapp": "https://wa.me/5545933002811"
-            }
-        },
-        "dados_internos": {
-            "proprietario": "Fernanda Souza",
-            "matricula": "MAT-AL905-PR",
-            "observacoes": "Aceita permuta"
+    "codigo": "IMV006",
+    "dados_publicos": {
+        "tipo_imovel": "Apartamento",
+        "objetivo": "Venda",
+        "nome": "Edifício Palladium Residence",
+        "cidade": "Cascavel",
+        "estado": "PR",
+        "bairro": "Centro",
+        "endereco": "Rua Paranagua",
+        "numero": "199 - AP 1101",
+        "imagem": "../assets/imagens/palladium-residence/ap1101/principal.jpg",
+        "area_util": 130,
+        "quartos": 3,
+        "banheiros": 3,
+        "vagas": 2,
+        "preco": 650000,
+        "descricao": "Apartamento no 11º andar, excelente iluminação natural.",
+        "fotos": [
+            "../assets/imagens/palladium-residence/ap1101/01.jpg",
+            "../assets/imagens/palladium-residence/ap1101/02.jpg",
+            "../assets/imagens/palladium-residence/ap1101/03.jpg",
+            "../assets/imagens/palladium-residence/ap1101/04.jpg",
+            "../assets/imagens/palladium-residence/ap1101/05.jpg",
+            "../assets/imagens/palladium-residence/ap1101/06.jpg",
+            "../assets/imagens/palladium-residence/ap1101/07.jpg",
+            "../assets/imagens/palladium-residence/ap1101/08.jpg",
+            "../assets/imagens/palladium-residence/ap1101/09.jpg",
+            "../assets/imagens/palladium-residence/ap1101/10.jpg",
+            "../assets/imagens/palladium-residence/ap1101/11.jpg",
+            "../assets/imagens/palladium-residence/ap1101/12.jpg",
+            "../assets/imagens/palladium-residence/ap1101/13.jpg",
+            "../assets/imagens/palladium-residence/ap1101/14.jpg",
+            "../assets/imagens/palladium-residence/ap1101/15.jpg"
+        ],
+        "contato": {
+            "corretor(a)": "Karina Riuz",
+            "telefone": "+55 45 9 3300-2811",
+            "whatsapp": "https://wa.me/5545933002811"
         }
     },
-    {
-        "codigo": "IMV005",
-        "dados_publicos": {
-            "tipo_imovel": "Apartamento",
-            "objetivo": "Venda",
-            "nome": "Edifício Palladium Residence",
-            "cidade": "Cascavel",
-            "estado": "PR",
-            "bairro": "Centro",
-            "endereco": "Rua Paraná",
-            "numero": "500 - AP 801",
-            "imagem": "../assets/imagens/palladium/ap801/principal.jpg",
-            "area_util": 120,
-            "quartos": 3,
-            "banheiros": 2,
-            "vagas": 2,
-            "preco": 650000,
-            "descricao": "Apartamento no 8º andar com vista panorâmica.",
-            "fotos": [
-                "../assets/imagens/palladium/ap801/sala.jpg",
-                "../assets/imagens/palladium/ap801/cozinha.jpg"
-            ],
-            "contato": {
-                "telefone": "+55 45 9 3300-2811",
-                "whatsapp": "https://wa.me/5545933002811"
-            }
-        },
-        "dados_internos": {
-            "proprietario": "Ricardo Lima",
-            "matricula": "MAT-PL801-PR",
-            "observacoes": "Disponível para visitas"
-        }
-    },
-    {
-        "codigo": "IMV006",
-        "dados_publicos": {
-            "tipo_imovel": "Apartamento",
-            "objetivo": "Venda",
-            "nome": "Edifício Palladium Residence",
-            "cidade": "Cascavel",
-            "estado": "PR",
-            "bairro": "Centro",
-            "endereco": "Rua Paraná",
-            "numero": "500 - AP 1101",
-            "imagem": "../assets/imagens/palladium/ap1101/principal.jpg",
-            "area_util": 130,
-            "quartos": 3,
-            "banheiros": 2,
-            "vagas": 2,
-            "preco": 680000,
-            "descricao": "Apartamento no 11º andar, excelente iluminação natural.",
-            "fotos": [
-                "../assets/imagens/palladium/ap1101/sala.jpg",
-                "../assets/imagens/palladium/ap1101/quarto.jpg"
-            ],
-            "contato": {
-                "telefone": "+55 45 9 3300-2811",
-                "whatsapp": "https://wa.me/5545933002811"
-            }
-        },
-        "dados_internos": {
-            "proprietario": "Paula Fernandes",
-            "matricula": "MAT-PL1101-PR",
-            "observacoes": "Aceita financiamento"
-        }
-    },
-    {
-        "codigo": "IMV007",
-        "dados_publicos": {
-            "tipo_imovel": "Apartamento",
-            "objetivo": "Venda",
-            "nome": "Ilhas do Lago",
-            "cidade": "Cascavel",
-            "estado": "PR",
-            "bairro": "Pioneiros",
-            "endereco": "Rua das Flores",
-            "numero": "300",
-            "imagem": "../assets/imagens/ilhas-do-lago/principal.jpg",
-            "area_util": 85,
-            "quartos": 2,
-            "banheiros": 2,
-            "vagas": 1,
-            "preco": 450000,
-            "descricao": "Apartamento compacto e funcional, ideal para jovens casais.",
-            "fotos": [
-                "../assets/imagens/ilhas-do-lago/sala.jpg",
-                "../assets/imagens/ilhas-do-lago/cozinha.jpg"
-            ],
-            "contato": {
-                "telefone": "+55 45 9 3300-2811",
-                "whatsapp": "https://wa.me/5545933002811"
-            }
-        },
-        "dados_internos": {
-            "proprietario": "Ana Martins",
-            "matricula": "MAT-IL300-PR",
-            "observacoes": "Disponível para financiamento"
-        }
-    },
-    {
-        "codigo": "IMV008",
-        "dados_publicos": {
-            "tipo_imovel": "Casa",
-            "objetivo": "Venda",
-            "nome": "Casa Jardim das Américas",
-            "cidade": "Cascavel",
-            "estado": "PR",
-            "bairro": "Jardim das Américas",
-            "endereco": "Rua das Palmeiras",
-            "numero": "50",
-            "imagem": "../assets/imagens/casa-jardim-americas/principal.jpg",
-            "area_util": 180,
-            "quartos": 4,
-            "banheiros": 3,
-            "vagas": 2,
-            "preco": 750000,
-            "descricao": "Casa espaçosa com área gourmet e quintal amplo.",
-            "fotos": [
-                "../assets/imagens/casa-jardim-americas/sala.jpg",
-                "../assets/imagens/casa-jardim-americas/cozinha.jpg",
-                "../assets/imagens/casa-jardim-americas/quintal.jpg"
-            ],
-            "contato": {
-                "telefone": "+55 45 9 3300-2811",
-                "whatsapp": "https://wa.me/5545933002811"
-            }
-        },
-        "dados_internos": {
-            "proprietario": "Pedro Almeida",
-            "matricula": "MAT-CJA50-PR",
-            "observacoes": "Aceita permuta"
-        }
-    },
-    {
-        "codigo": "IMV009",
-        "dados_publicos": {
-            "tipo_imovel": "Terreno",
-            "objetivo": "Venda",
-            "nome": "Terreno na Av. Brasil",
-            "cidade": "Cascavel",
-            "estado": "PR",
-            "bairro": "Centro",
-            "endereco": "Av. Brasil",
-            "numero": "3000",
-            "imagem": "../assets/imagens/terreno-avenida-brasil/principal.jpg",
-            "area_util": 400,
-            "preco": 320000,
-            "descricao": "Terreno bem localizado, ideal para construção comercial.",
-            "fotos": [
-                "../assets/imagens/terreno-avenida-brasil/frente.jpg",
-                "../assets/imagens/terreno-avenida-brasil/vista.jpg"
-            ],
-            "contato": {
-                "telefone": "+55 45 9 3300-2811",
-                "whatsapp": "https://wa.me/5545933002811"
-            }
-        },
-        "dados_internos": {
-            "proprietario": "José Ferreira",
-            "matricula": "MAT-TAB3000-PR",
-            "observacoes": "Documentação em dia"
-        }
+    "dados_internos": {
+        "proprietario": "Johnnatan Krause Ribeiro Moreno",
+        "telefone": "+55 45 9 8821-3899",
+        "email": "johnnatankrause@gmail.com",
+        "matricula": "MAT-14-PR",
+        "observacoes": "Apartamento desocupado, Disponível para visitas!"
     }
+    },
+    {
+    "codigo": "IMV007",
+    "dados_publicos": {
+        "tipo_imovel": "Apartamento",
+        "objetivo": "Venda",
+        "nome": "Resort Ilhas do Lago",
+        "cidade": "Caldas Novas",
+        "estado": "GO",
+        "bairro": "Pioneiros",
+        "endereco": "Avenida Caminho do Lago, 4600, na região do Lago Corumbá, em Caldas Novas - GO, Rua das Flores",
+        "numero": "300",
+        "imagem": "../assets/imagens/ilhas-do-lago/apF24/principal.jpg",
+        "area_util": 66.2,
+        "quartos": 2,
+        "banheiros": 2,
+        "vagas": 1,
+        "preco": 45000,
+        "descricao": "Cota de apartamento em Resort, planejado e mobiliado, confortável, funcional e prático, ideal para família curtir férias e viagens a passeios.",
+        "fotos": [
+            "../assets/imagens/ilhas-do-lago/apF24/01.jpg",
+            "../assets/imagens/ilhas-do-lago/apF24/02.jpg",
+            "../assets/imagens/ilhas-do-lago/apF24/03.jpg",
+            "../assets/imagens/ilhas-do-lago/apF24/04.jpg",
+            "../assets/imagens/ilhas-do-lago/apF24/05.jpg",
+            "../assets/imagens/ilhas-do-lago/apF24/06.jpg",
+            "../assets/imagens/ilhas-do-lago/apF24/07.jpg",
+            "../assets/imagens/ilhas-do-lago/apF24/08.jpg",
+            "../assets/imagens/ilhas-do-lago/apF24/09.jpg",
+            "../assets/imagens/ilhas-do-lago/apF24/10.jpg",
+            "../assets/imagens/ilhas-do-lago/apF24/11.jpg",
+            "../assets/imagens/ilhas-do-lago/apF24/12.jpg"
+        ],
+        "contato": {
+            "corretor(a)": "Karina Riuz",
+            "telefone": "+55 45 9 3300-2811",
+            "whatsapp": "https://wa.me/5545933002811"
+        }
+    },
+    "dados_internos": {
+        "proprietario": "Johnnatan Krause Ribeiro Moreno",
+        "telefone": "+55 45 9 8821-3899",
+        "email": "johnnatankrause@gmail.com",
+        "matricula": "MAT-14-PR",
+        "observacoes": "Apartamento desocupado, Disponível para visitas!"
+    }
+    },
+    {
+    "codigo": "IMV008",
+    "dados_publicos": {
+        "tipo_imovel": "Casa",
+        "objetivo": "Venda",
+        "nome": "Casa Jardim das Américas",
+        "cidade": "Cascavel",
+        "estado": "PR",
+        "bairro": "Jardim das Américas",
+        "endereco": "Rua das Palmeiras",
+        "numero": "50",
+        "imagem": "../assets/imagens/casa-jardim-americas/americas50/principal.jpg",
+        "area_util": 180,
+        "quartos": 4,
+        "banheiros": 3,
+        "vagas": 3,
+        "preco": 750000,
+        "descricao": "Casa espaçosa com área gourmet e quintal amplo.",
+        "fotos": [
+            "../assets/imagens/casa-jardim-americas/americas50/01.jpg",
+            "../assets/imagens/casa-jardim-americas/americas50/02.jpg",
+            "../assets/imagens/casa-jardim-americas/americas50/03.jpg",
+            "../assets/imagens/casa-jardim-americas/americas50/04.jpg",
+            "../assets/imagens/casa-jardim-americas/americas50/05.jpg"
+        ],
+        "contato": {
+            "corretor(a)": "Karina Riuz",
+            "telefone": "+55 45 9 3300-2811",
+            "whatsapp": "https://wa.me/5545933002811"
+        }
+    },
+    "dados_internos": {
+        "proprietario": "Johnnatan Krause Ribeiro Moreno",
+        "telefone": "+55 45 9 8821-3899",
+        "email": "johnnatankrause@gmail.com",
+        "matricula": "MAT-14-PR",
+        "observacoes": "Apartamento desocupado, Disponível para visitas!"
+    }
+    },
+    {
+    "codigo": "IMV009",
+    "dados_publicos": {
+        "tipo_imovel": "Terreno",
+        "objetivo": "Venda",
+        "nome": "Terreno na Av. Brasil",
+        "cidade": "Cascavel",
+        "estado": "PR",
+        "bairro": "Centro",
+        "endereco": "Av. Brasil",
+        "numero": "3000",
+        "imagem": "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/principal.jpg",
+        "area_util": 400,
+        "quartos": 0,
+        "banheiros": 0,
+        "vagas": 0,
+        "preco": 350000,
+        "descricao": "Terreno bem localizado, ideal para construção comercial.",
+        "fotos": [
+            "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/01.jpg",
+            "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/02.jpg",
+            "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/03.jpg",
+            "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/04.jpg",
+            "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/05.jpg",
+            "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/06.jpg",
+            "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/07.jpg",
+            "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/08.jpg",
+            "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/09.jpg",
+            "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/10.jpg",
+            "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/11.jpg",
+            "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/12.jpg",
+            "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/13.jpg",
+            "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/14.jpg",
+            "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/15.jpg"
+        ],
+        "contato": {
+            "corretor(a)": "Karina Riuz",
+            "telefone": "+55 45 9 3300-2811",
+            "whatsapp": "https://wa.me/5545933002811"
+        }
+    },
+    "dados_internos": {
+        "proprietario": "Johnnatan Krause Ribeiro Moreno",
+        "telefone": "+55 45 9 8821-3899",
+        "email": "johnnatankrause@gmail.com",
+        "matricula": "MAT-14-PR",
+        "observacoes": "Apartamento desocupado, Disponível para visitas!"
+    }
+}
 ]
