@@ -8,50 +8,91 @@
             "cidade": "Cascavel",
             "estado": "PR",
             "bairro": "Centro",
-            "endereco": "Rua Souza Naves",
-            "numero": "1200",
-            "imagem": "../assets/imagens/grand-hudson.jpg",
-            "unidades": [
-                {
-                    "numero": "801",
-                    "andar": 8,
-                    "quartos": 3,
-                    "banheiros": 2,
-                    "vagas": 2,
-                    "preco": 520000,
-                    "descricao": "Apartamento moderno com sacada gourmet.",
-                    "fotos": [
-                        "../assets/imagens/grand-hudson-801-sala.jpg",
-                        "../assets/imagens/grand-hudson-801-cozinha.jpg"
-                    ]
-                },
-                {
-                    "numero": "905",
-                    "andar": 9,
-                    "quartos": 3,
-                    "banheiros": 2,
-                    "vagas": 2,
-                    "preco": 540000,
-                    "descricao": "Apartamento no 9º andar com excelente iluminação.",
-                    "fotos": [
-                        "../assets/imagens/grand-hudson-905-sala.jpg",
-                        "../assets/imagens/grand-hudson-905-quarto.jpg"
-                    ]
-                }
+            "endereco": "Rua Paraguai",
+            "numero": "427 - AP 14 - 1º Andar",
+            "imagem": "../assets/imagens/grand-hudson/ap14/principal.jpg",
+            "area_util": 85.14,
+            "quartos": 3,
+            "banheiros": 2,
+            "vagas": 2,
+            "preco": 560000,
+            "condominio": 450,
+            "garagens": ["23", "24"],
+            "descricao": "Apartamento semimobiliado no Edifício Residencial Grand Hudson, com 3 quartos (1 suíte), 2 vagas de garagem, cozinha planejada com cooktp e coifa, Ar condicionados, Suite planejada, Escritorio planejado, sala com dois ambientes e sacada com churrasqueira.",
+            "fotos": [
+                "../assets/imagens/grand-hudson/ap14/01.jpg",
+                "../assets/imagens/grand-hudson/ap14/02.jpg",
+                "../assets/imagens/grand-hudson/ap14/03.jpg",
+                "../assets/imagens/grand-hudson/ap14/04.jpg",
+                "../assets/imagens/grand-hudson/ap14/05.jpg",
+                "../assets/imagens/grand-hudson/ap14/06.jpg",
+                "../assets/imagens/grand-hudson/ap14/07.jpg",
+                "../assets/imagens/grand-hudson/ap14/08.jpg",
+                "../assets/imagens/grand-hudson/ap14/09.jpg",
+                "../assets/imagens/grand-hudson/ap14/10.jpg"
             ],
             "contato": {
+                "Corretor(a)": "Karina Riuz",
                 "telefone": "+55 45 9 3300-2811",
                 "whatsapp": "https://wa.me/5545933002811"
             }
         },
         "dados_internos": {
-            "proprietario": "Johnnatan Krause",
-            "matricula": "123456-PR",
-            "observacoes": "Disponível para visitas"
+            "proprietario": "Johnnatan Krause Ribeiro Moreno",
+            "telefone": "+55 45 9 8821-3899",
+            "email": "johnnatankrause@gmail.com",
+            "matricula": "MAT-14-PR",
+            "observacoes": "Apartamento desocupado, Disponível para visitas!"
         }
     },
     {
         "codigo": "IMV002",
+        "dados_publicos": {
+            "tipo_imovel": "Apartamento",
+            "objetivo": "Venda",
+            "nome": "Residencial Grand Hudson",
+            "cidade": "Cascavel",
+            "estado": "PR",
+            "bairro": "Centro",
+            "endereco": "Rua Paraguai",
+            "numero": "427 - AP 29 - 2º Andar",
+            "imagem": "../assets/imagens/grand-hudson/ap29/principal.jpg",
+            "area_util": 85.14,
+            "quartos": 3,
+            "banheiros": 2,
+            "vagas": 2,
+            "preco": 650000,
+            "condominio": 450,
+            "garagens": ["13", "14"],
+            "descricao": "Apartamento semimobiliado no Edifício Residencial Grand Hudson, com 3 quartos (1 suíte), 2 vagas de garagem, cozinha planejada com cooktp, geladeira,lava louças e coifa, Ar condicionados em todos os comodos, Suite planejada, sala planejada e com dois ambientes e sacada com churrasqueira.",
+            "fotos": [
+                "../assets/imagens/grand-hudson/ap29/01.jpg",
+                "../assets/imagens/grand-hudson/ap29/02.jpg",
+                "../assets/imagens/grand-hudson/ap29/03.jpg",
+                "../assets/imagens/grand-hudson/ap29/04.jpg",
+                "../assets/imagens/grand-hudson/ap29/05.jpg",
+                "../assets/imagens/grand-hudson/ap29/06.jpg",
+                "../assets/imagens/grand-hudson/ap29/07.jpg",
+                "../assets/imagens/grand-hudson/ap29/08.jpg",
+                "../assets/imagens/grand-hudson/ap29/09.jpg",
+                "../assets/imagens/grand-hudson/ap29/10.jpg"
+            ],
+            "contato": {
+                "Corretor(a)": "Karina Riuz",
+                "telefone": "+55 45 9 3300-2811",
+                "whatsapp": "https://wa.me/5545933002811"
+            }
+        },
+        "dados_internos": {
+            "proprietario": "Maria Oliveira da Silva",
+            "telefone": "+55 45 9 9987-6543",
+            "email": "mariaoliveiradasilva@gmail.com",  
+            "matricula": "MAT-905-PR",
+            "observacoes": "Aceita financiamento"
+        }
+    },
+    {
+        "codigo": "IMV003",
         "dados_publicos": {
             "tipo_imovel": "Apartamento",
             "objetivo": "Venda",
@@ -60,35 +101,17 @@
             "estado": "PR",
             "bairro": "Centro",
             "endereco": "Av. Brasil",
-            "numero": "2000",
-            "imagem": "../assets/imagens/abraham-lincoln.jpg",
-            "unidades": [
-                {
-                    "numero": "801",
-                    "andar": 8,
-                    "quartos": 3,
-                    "banheiros": 2,
-                    "vagas": 2,
-                    "preco": 580000,
-                    "descricao": "Apartamento no 8º andar com vista privilegiada.",
-                    "fotos": [
-                        "../assets/imagens/abraham-lincoln-801-sala.jpg",
-                        "../assets/imagens/abraham-lincoln-801-cozinha.jpg"
-                    ]
-                },
-                {
-                    "numero": "905",
-                    "andar": 9,
-                    "quartos": 3,
-                    "banheiros": 2,
-                    "vagas": 2,
-                    "preco": 600000,
-                    "descricao": "Apartamento no 9º andar, excelente iluminação natural.",
-                    "fotos": [
-                        "../assets/imagens/abraham-lincoln-905-sala.jpg",
-                        "../assets/imagens/abraham-lincoln-905-quarto.jpg"
-                    ]
-                }
+            "numero": "2000 - AP 801",
+            "imagem": "../assets/imagens/abraham-lincoln/ap801/principal.jpg",
+            "area_util": 100,
+            "quartos": 3,
+            "banheiros": 2,
+            "vagas": 2,
+            "preco": 580000,
+            "descricao": "Apartamento no 8º andar com vista privilegiada.",
+            "fotos": [
+                "../assets/imagens/abraham-lincoln/ap801/sala.jpg",
+                "../assets/imagens/abraham-lincoln/ap801/cozinha.jpg"
             ],
             "contato": {
                 "telefone": "+55 45 9 3300-2811",
@@ -96,13 +119,46 @@
             }
         },
         "dados_internos": {
-            "proprietario": "Johnnatan Krause",
-            "matricula": "654321-PR",
-            "observacoes": "Unidade já vendida, manter para histórico"
+            "proprietario": "João Pereira",
+            "matricula": "MAT-AL801-PR",
+            "observacoes": "Unidade disponível"
         }
     },
     {
-        "codigo": "IMV003",
+        "codigo": "IMV004",
+        "dados_publicos": {
+            "tipo_imovel": "Apartamento",
+            "objetivo": "Venda",
+            "nome": "Edifício Abraham Lincoln",
+            "cidade": "Cascavel",
+            "estado": "PR",
+            "bairro": "Centro",
+            "endereco": "Av. Brasil",
+            "numero": "2000 - AP 905",
+            "imagem": "../assets/imagens/abraham-lincoln/ap905/principal.jpg",
+            "area_util": 115,
+            "quartos": 4,
+            "banheiros": 3,
+            "vagas": 2,
+            "preco": 600000,
+            "descricao": "Apartamento no 9º andar, excelente iluminação natural.",
+            "fotos": [
+                "../assets/imagens/abraham-lincoln/ap905/sala.jpg",
+                "../assets/imagens/abraham-lincoln/ap905/quarto.jpg"
+            ],
+            "contato": {
+                "telefone": "+55 45 9 3300-2811",
+                "whatsapp": "https://wa.me/5545933002811"
+            }
+        },
+        "dados_internos": {
+            "proprietario": "Fernanda Souza",
+            "matricula": "MAT-AL905-PR",
+            "observacoes": "Aceita permuta"
+        }
+    },
+    {
+        "codigo": "IMV005",
         "dados_publicos": {
             "tipo_imovel": "Apartamento",
             "objetivo": "Venda",
@@ -111,35 +167,17 @@
             "estado": "PR",
             "bairro": "Centro",
             "endereco": "Rua Paraná",
-            "numero": "500",
-            "imagem": "../assets/imagens/palladium-residence.jpg",
-            "unidades": [
-                {
-                    "numero": "801",
-                    "andar": 8,
-                    "quartos": 3,
-                    "banheiros": 2,
-                    "vagas": 2,
-                    "preco": 650000,
-                    "descricao": "Apartamento no 8º andar com vista panorâmica.",
-                    "fotos": [
-                        "../assets/imagens/palladium-801-sala.jpg",
-                        "../assets/imagens/palladium-801-cozinha.jpg"
-                    ]
-                },
-                {
-                    "numero": "1101",
-                    "andar": 11,
-                    "quartos": 3,
-                    "banheiros": 2,
-                    "vagas": 2,
-                    "preco": 680000,
-                    "descricao": "Apartamento no 11º andar, excelente iluminação natural.",
-                    "fotos": [
-                        "../assets/imagens/palladium-1101-sala.jpg",
-                        "../assets/imagens/palladium-1101-quarto.jpg"
-                    ]
-                }
+            "numero": "500 - AP 801",
+            "imagem": "../assets/imagens/palladium/ap801/principal.jpg",
+            "area_util": 120,
+            "quartos": 3,
+            "banheiros": 2,
+            "vagas": 2,
+            "preco": 650000,
+            "descricao": "Apartamento no 8º andar com vista panorâmica.",
+            "fotos": [
+                "../assets/imagens/palladium/ap801/sala.jpg",
+                "../assets/imagens/palladium/ap801/cozinha.jpg"
             ],
             "contato": {
                 "telefone": "+55 45 9 3300-2811",
@@ -147,13 +185,46 @@
             }
         },
         "dados_internos": {
-            "proprietario": "Johnnatan Krause",
-            "matricula": "7891011-PR",
-            "observacoes": "Possui várias unidades disponíveis para venda"
+            "proprietario": "Ricardo Lima",
+            "matricula": "MAT-PL801-PR",
+            "observacoes": "Disponível para visitas"
         }
     },
     {
-        "codigo": "IMV004",
+        "codigo": "IMV006",
+        "dados_publicos": {
+            "tipo_imovel": "Apartamento",
+            "objetivo": "Venda",
+            "nome": "Edifício Palladium Residence",
+            "cidade": "Cascavel",
+            "estado": "PR",
+            "bairro": "Centro",
+            "endereco": "Rua Paraná",
+            "numero": "500 - AP 1101",
+            "imagem": "../assets/imagens/palladium/ap1101/principal.jpg",
+            "area_util": 130,
+            "quartos": 3,
+            "banheiros": 2,
+            "vagas": 2,
+            "preco": 680000,
+            "descricao": "Apartamento no 11º andar, excelente iluminação natural.",
+            "fotos": [
+                "../assets/imagens/palladium/ap1101/sala.jpg",
+                "../assets/imagens/palladium/ap1101/quarto.jpg"
+            ],
+            "contato": {
+                "telefone": "+55 45 9 3300-2811",
+                "whatsapp": "https://wa.me/5545933002811"
+            }
+        },
+        "dados_internos": {
+            "proprietario": "Paula Fernandes",
+            "matricula": "MAT-PL1101-PR",
+            "observacoes": "Aceita financiamento"
+        }
+    },
+    {
+        "codigo": "IMV007",
         "dados_publicos": {
             "tipo_imovel": "Apartamento",
             "objetivo": "Venda",
@@ -163,26 +234,30 @@
             "bairro": "Pioneiros",
             "endereco": "Rua das Flores",
             "numero": "300",
-            "imagem": "../assets/imagens/ilhas-do-lago.jpg",
+            "imagem": "../assets/imagens/ilhas-do-lago/principal.jpg",
             "area_util": 85,
             "quartos": 2,
             "banheiros": 2,
             "vagas": 1,
             "preco": 450000,
             "descricao": "Apartamento compacto e funcional, ideal para jovens casais.",
+            "fotos": [
+                "../assets/imagens/ilhas-do-lago/sala.jpg",
+                "../assets/imagens/ilhas-do-lago/cozinha.jpg"
+            ],
             "contato": {
                 "telefone": "+55 45 9 3300-2811",
                 "whatsapp": "https://wa.me/5545933002811"
             }
         },
         "dados_internos": {
-            "proprietario": "Johnnatan Krause",
-            "matricula": "111213-PR",
+            "proprietario": "Ana Martins",
+            "matricula": "MAT-IL300-PR",
             "observacoes": "Disponível para financiamento"
         }
     },
     {
-        "codigo": "IMV005",
+        "codigo": "IMV008",
         "dados_publicos": {
             "tipo_imovel": "Casa",
             "objetivo": "Venda",
@@ -192,26 +267,31 @@
             "bairro": "Jardim das Américas",
             "endereco": "Rua das Palmeiras",
             "numero": "50",
-            "imagem": "../assets/imagens/casa-jardim-americas-50.jpg",
+            "imagem": "../assets/imagens/casa-jardim-americas/principal.jpg",
             "area_util": 180,
             "quartos": 4,
             "banheiros": 3,
             "vagas": 2,
             "preco": 750000,
             "descricao": "Casa espaçosa com área gourmet e quintal amplo.",
+            "fotos": [
+                "../assets/imagens/casa-jardim-americas/sala.jpg",
+                "../assets/imagens/casa-jardim-americas/cozinha.jpg",
+                "../assets/imagens/casa-jardim-americas/quintal.jpg"
+            ],
             "contato": {
                 "telefone": "+55 45 9 3300-2811",
                 "whatsapp": "https://wa.me/5545933002811"
             }
         },
         "dados_internos": {
-            "proprietario": "Johnnatan Krause",
-            "matricula": "141516-PR",
+            "proprietario": "Pedro Almeida",
+            "matricula": "MAT-CJA50-PR",
             "observacoes": "Aceita permuta"
         }
     },
     {
-        "codigo": "IMV006",
+        "codigo": "IMV009",
         "dados_publicos": {
             "tipo_imovel": "Terreno",
             "objetivo": "Venda",
@@ -221,18 +301,22 @@
             "bairro": "Centro",
             "endereco": "Av. Brasil",
             "numero": "3000",
-            "imagem": "../assets/imagens/terreno-avenida-brasil-3000.jpg",
+            "imagem": "../assets/imagens/terreno-avenida-brasil/principal.jpg",
             "area_util": 400,
             "preco": 320000,
             "descricao": "Terreno bem localizado, ideal para construção comercial.",
+            "fotos": [
+                "../assets/imagens/terreno-avenida-brasil/frente.jpg",
+                "../assets/imagens/terreno-avenida-brasil/vista.jpg"
+            ],
             "contato": {
                 "telefone": "+55 45 9 3300-2811",
                 "whatsapp": "https://wa.me/5545933002811"
             }
         },
         "dados_internos": {
-            "proprietario": "Johnnatan Krause",
-            "matricula": "171819-PR",
+            "proprietario": "José Ferreira",
+            "matricula": "MAT-TAB3000-PR",
             "observacoes": "Documentação em dia"
         }
     }
