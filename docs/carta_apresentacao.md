@@ -1,4 +1,3 @@
-" " 
 # Carta de Apresentação - PEX III
 
 ## 📌 Descrição

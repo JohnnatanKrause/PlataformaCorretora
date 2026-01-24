@@ -33,38 +33,78 @@ fetch("imoveis.json")
             const dados = imovelEncontrado.dados_publicos;
             const container = document.getElementById("detalhes");
 
-            // Galeria de fotos
+            // Galeria de fotos com Swiper
+            let fotos = [];
+            if (unidadeEncontrada?.fotos?.length > 0) {
+                fotos = unidadeEncontrada.fotos;
+            } else if (dados.fotos?.length > 0) {
+                fotos = dados.fotos;
+            }
+
             let galeria = "";
-            if (unidadeEncontrada && unidadeEncontrada.fotos && unidadeEncontrada.fotos.length > 0) {
-                galeria = `<div class="galeria">` +
-                    unidadeEncontrada.fotos.map(foto => `<img src="${foto}" alt="${dados.nome}">`).join("") +
-                    `</div>`;
-            } else if (dados.fotos && dados.fotos.length > 0) {
-                galeria = `<div class="galeria">` +
-                    dados.fotos.map(foto => `<img src="${foto}" alt="${dados.nome}">`).join("") +
-                    `</div>`;
+            if (fotos.length > 0) {
+                galeria = `
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      ${fotos.map(foto => `
+                        <div class="swiper-slide">
+                          <img src="${foto}" alt="${dados.nome}">
+                        </div>
+                      `).join("")}
+                    </div>
+                    <!-- Botões de navegação -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <!-- Paginação -->
+                    <div class="swiper-pagination"></div>
+                  </div>
+                `;
             }
 
             // Monta referência completa para WhatsApp
             const referencia = `${codigo} - ${dados.tipo_imovel} ${dados.nome} ${unidadeEncontrada ? "AP " + unidadeEncontrada.numero : (dados.numero ? "Nº " + dados.numero : "")}`;
 
-            // Renderização dos detalhes
+            // Renderização dos detalhes com layout em duas colunas
             container.innerHTML = `
-        <h2>${dados.nome} ${unidadeEncontrada ? "- AP " + unidadeEncontrada.numero : (dados.numero ? "- Nº " + dados.numero : "")}</h2>
-        <img src="${dados.imagem}" alt="${dados.nome}" class="principal">
-        <p><strong>Tipo:</strong> ${dados.tipo_imovel} | <strong>Objetivo:</strong> ${dados.objetivo}</p>
-        <p><strong>Cidade:</strong> ${dados.cidade}/${dados.estado} - ${dados.bairro ?? ""}</p>
-        <p><strong>Área útil:</strong> ${(unidadeEncontrada?.area_util ?? dados.area_util) ?? "-"} m²</p>
-        <p><strong>Quartos:</strong> ${(unidadeEncontrada?.quartos ?? dados.quartos) ?? "-"} | <strong>Banheiros:</strong> ${(unidadeEncontrada?.banheiros ?? dados.banheiros) ?? "-"}</p>
-        <p><strong>Vagas:</strong> ${(unidadeEncontrada?.vagas ?? dados.vagas) ?? "-"}</p>
-        <p><strong>Preço:</strong> R$ ${(unidadeEncontrada?.preco ?? dados.preco).toLocaleString("pt-BR")}</p>
-        ${dados.condominio ? `<p><strong>Condomínio:</strong> R$ ${dados.condominio}</p>` : ""}
-        <p>${unidadeEncontrada?.descricao ?? dados.descricao}</p>
-        ${galeria}
-        <a class="btn-whatsapp" 
-           href="${dados.contato.whatsapp}?text=${encodeURIComponent("Olá vim do site e tenho interesse no imóvel " + referencia)}" 
-           target="_blank">Falar no WhatsApp</a>
-      `;
+              <div class="detalhes-container">
+                <div class="galeria-wrapper">
+                  ${galeria}
+                </div>
+
+                <div class="info-wrapper">
+                  <h2>${dados.nome}</h2>
+                  <p><strong>Tipo:</strong> ${dados.tipo_imovel}</p>                
+                  <p><strong>Objetivo:</strong> ${dados.objetivo}</p>
+                  <p><strong>Área útil:</strong> ${(unidadeEncontrada?.area_util ?? dados.area_util) ?? "-"} m²</p>
+                  <p><strong>Investimento:</strong> 💰 R$ ${(unidadeEncontrada?.preco ?? dados.preco).toLocaleString("pt-BR")}</p>
+                  <p><strong>Localização:</strong> ${dados.endereco ?? ""}, ${dados.numero ?? ""}, ${unidadeEncontrada ? "- AP " + unidadeEncontrada.numero : ""} ${dados.bairro ? dados.bairro + " - " : ""} ${dados.cidade}/${dados.estado} </p>
+                  <p><strong>Quartos:</strong> 🛏️ ${(unidadeEncontrada?.quartos ?? dados.quartos) ?? "-"}</p>
+                  <p><strong>Banheiros:</strong> 🚿 ${(unidadeEncontrada?.banheiros ?? dados.banheiros) ?? "-"}</p>
+                  <p><strong>Vagas:</strong> 🚗 ${(unidadeEncontrada?.vagas ?? dados.vagas) ?? "-"}</p>
+                  
+                  ${dados.condominio ? `<p><strong>Condomínio:</strong> R$ ${dados.condominio}</p>` : ""}
+                  <p>${unidadeEncontrada?.descricao ?? dados.descricao}</p>
+                  <a class="btn-whatsapp" 
+                     href="${dados.contato.whatsapp}?text=${encodeURIComponent("Olá vim do site e tenho interesse no imóvel " + referencia)}" 
+                     target="_blank">Falar no WhatsApp</a>
+                </div>
+              </div>
+            `;
+
+            // Inicializa o Swiper (depois que o HTML foi inserido)
+            if (fotos.length > 0) {
+                new Swiper('.swiper', {
+                    loop: true,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                });
+            }
         } else {
             document.getElementById("detalhes").innerHTML = "<p>Imóvel não encontrado.</p>";
         }
