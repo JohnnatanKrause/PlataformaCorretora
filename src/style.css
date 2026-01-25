@@ -1,86 +1,176 @@
+/* ==========================
+   BODY PADRÃO (reset geral)
+========================== */
 body {
+    margin: 0;    
     font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    background: #f5f5f5;
+}
+
+/* ==========================
+   PÁGINA INICIAL (home)
+========================== */
+body.home {
+    height: 100vh;                     /* sem rolagem desnecessária */
+    overflow: hidden;                /* evita rolagem */
     color: #333;
+    background: #1a1a1a;
+    /* sólido, combina com header/footer */
 }
 
-header {
-    background: black;
-    color: gold;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
+/* ==========================
+   PERFIL DA CORRETORA
+========================== */
+body.perfil {
+        height: 100vh;                     /* sem rolagem desnecessária */
+    overflow: hidden;                /* evita rolagem */
+    color: #030109;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        /* overlay escuro */
+        url('../assets/imagens/cidade-blur.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-header img {
-    height: 60px;
+/* ==========================
+   ADMIN / LOGIN
+========================== */
+body.admin {
+    height: 100vh;                     /* sem rolagem desnecessária */
+    overflow: hidden;                /* evita rolagem */
+    color: #fff;
+    background: #1a1a1a;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+/* ==========================
+   CATÁLOGO (aluguel / venda)
+========================== */
+body.catalogo {
+    min-height: auto;               /* deixa o conteúdo ditar a altura */
+    color: #333;
+    background: #f5f5f5;          /* fundo claro para destacar os cards */
 }
 
-nav a {
-    color: gold;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-    /* hover suave */
-}
-
-nav a:hover {
-    color: #d4af37;
-    /* dourado mais escuro */
+/* ==========================
+   DETALHES DO IMÓVEL
+========================== */
+body.imovel {
+    min-height: 100vh;
+    /* altura natural, só conforme conteúdo */
+    color: #333;
+    background: #f5f5f5;
+    /* fundo claro para destacar fotos e textos */
 }
 
 main {
     padding: 30px;
-    margin-bottom: 80px;
-    /* espaço para não sobrepor o rodapé fixo */
+    padding-top: 100px;      /* espaço para header fixo */
+    margin-bottom: 120px;    /* espaço para não sobrepor o rodapé fixo */
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 20px;
-}
-
-.card {
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-}
-
-.card img {
+/* ==========================
+   HEADER
+========================== */
+.site-header .top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;        /* logo à esquerda, menu à direita */
+    align-items: center;
+    background: #1a1a1a;
+    padding: 10px 15px 10px 0px;           /* top/right/bottom/left */
+    z-index: 1000;
 }
 
+.site-header .logo {
+    height: 60px;
+    margin-left: 10px;
+    /* garante respiro mesmo com padding menor */
+}
+
+.site-header .top-nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    /* permite que os botões quebrem linha */
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+}
+
+.site-header .top-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.site-header .top-nav a:hover {
+    color: #ffd700;
+    /* dourado no hover */
+}
+
+/* ==========================
+   FOOTER
+========================== */
+.site-footer {
+    background: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    font-size: 13px;
+    padding: 6px 8px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.site-footer .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.site-footer a.btn-dev {
+    background: #0077cc;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 13px;
+    transition: background 0.3s ease;
+}
+
+.site-footer a.btn-dev:hover {
+    background: #005fa3;
+}
+
+/* ==========================
+   COMPONENTES GERAIS
+========================== */
+
+/* Botão WhatsApp */
 .btn-whatsapp {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 15px;
     background: #25D366;
-    color: white;
+    color: #fff;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
     transition: background 0.3s ease;
-    /* hover suave */
 }
 
 .btn-whatsapp:hover {
     background: #1ebe5d;
 }
 
-/* Área restrita */
+/* Área restrita (login) */
 #login-container {
     display: flex;
     gap: 10px;
@@ -88,6 +178,7 @@ main {
 }
 
 #login-container input {
+    flex: 1;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -101,29 +192,37 @@ main {
     cursor: pointer;
     font-weight: bold;
     transition: background 0.3s ease;
-    /* hover suave */
 }
 
 #login-container button:hover {
     background: #d4af37;
 }
 
-/* Rodapé fixo */
-footer {
-    background: black;
-    color: gold;
-    text-align: center;
-    padding: 15px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+/* ==========================
+   GRID DE CARDS
+========================== */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
 }
 
-/* Cards na página inicial */
 .card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    padding: 20px;
     margin: 10px;
 }
 
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Card-link (página inicial) */
 .card-link {
     display: block;
     width: 300px;
@@ -152,7 +251,90 @@ footer {
     margin: 4px 8px;
 }
 
-/* Galeria de fotos na página de detalhes */
+/* Card-imóvel */
+.card-imovel {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.card-imovel img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card-imovel h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.card-imovel a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: #0077cc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.card-imovel a:hover {
+    background: #005fa3;
+}
+
+.card {
+  display: flex;               /* coloca imagem e info lado a lado */
+  align-items: center;         /* centraliza verticalmente */
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+.card-img {
+  width: 180px;                /* largura fixa da miniatura */
+  height: 120px;               /* altura fixa */
+  object-fit: cover;           /* garante que a foto se encaixe sem distorcer */
+  flex-shrink: 0;              /* impede a imagem de encolher */
+}
+
+.card-info {
+  padding: 15px;
+  flex: 1;                     /* ocupa o restante do espaço */
+}
+
+.card-info h3 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+}
+
+.card-info p {
+  margin: 0 0 10px;
+  color: #555;
+}
+
+.card-info .btn {
+  display: inline-block;
+  padding: 8px 12px;
+  background: #1a1a1a;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+
+
+
+/* ==========================
+   GALERIA / DETALHES
+========================== */
 .galeria {
     display: flex;
     gap: 10px;
@@ -165,48 +347,143 @@ footer {
     object-fit: cover;
     border-radius: 4px;
 }
+
 .swiper {
-  width: 100%;
-  max-width: 800px;
-  height: 500px;
-  margin: 20px auto;
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    margin: 20px auto;
 }
 
 .swiper-slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
 }
+
 .detalhes-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
 }
 
 .galeria-wrapper {
-  flex: 1 1 500px;
-  max-width: 600px;
+    flex: 1 1 500px;
+    max-width: 600px;
 }
 
 .info-wrapper {
-  flex: 1 1 300px;
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    flex: 1 1 300px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .info-wrapper h2 {
-  margin-top: 0;
-  font-size: 24px;
-  color: #333;
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
 }
 
 .info-wrapper p {
-  margin: 10px 0;
-  font-size: 16px;
-  line-height: 1.4;
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.4;
 }
 
+/* ==========================
+   PERFIL (3 colunas)
+========================== */
+.perfil-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 40px auto 120px auto;
+    padding: 20px;
+    background: linear-gradient(rgba(255, 255, 255, 2.95), rgba(255, 255, 255, 0.55));
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Coluna esquerda: foto + dados */
+.perfil-esquerda {
+    text-align: left;
+}
+
+.foto-perfil {
+    width: 260px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.perfil-esquerda h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.perfil-esquerda p {
+    margin: 6px 0;
+    font-size: 16px;
+}
+
+/* Coluna central: mensagem */
+.perfil-centro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.perfil-centro p {
+    font-size: 18px;
+    line-height: 2.0;
+}
+
+.perfil-centro blockquote {
+    font-size: 18px;
+    font-style: italic;
+    color: #0077cc;
+    margin-top: 15px;
+}
+
+/* Coluna direita: formulário */
+.perfil-direita {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.perfil-direita h2 {
+    margin-bottom: 15px;
+    color: #0077cc;
+}
+
+.perfil-direita input,
+.perfil-direita select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.perfil-direita button {
+    width: 100%;
+    padding: 12px;
+    background: #0077cc;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.perfil-direita button:hover {
+    background: #005fa3;
+}

@@ -1,57 +1,52 @@
-// Função para gerar código único de unidade
-function gerarCodigoUnico(imovelCodigo, unidadeNumero) {
-    return `${imovelCodigo}-${unidadeNumero}`;
+// script.js
+
+// Função principal para carregar os imóveis
+async function carregarImoveis() {
+  try {
+    // Busca o arquivo JSON
+    const response = await fetch("imoveis.json");
+    const imoveis = await response.json();
+
+    // Seletores das listas
+    const listaAluguel = document.getElementById("lista-aluguel");
+    const listaVendas = document.getElementById("lista-vendas");
+
+    // Limpa antes de renderizar
+    listaAluguel.innerHTML = "";
+    listaVendas.innerHTML = "";
+
+    // Percorre os imóveis
+    imoveis.forEach(imovel => {
+      const dados = imovel.dados_publicos;
+
+      // Cria o card
+      const card = document.createElement("div");
+      card.classList.add("card-imovel");
+
+      card.innerHTML = `
+        <img src="${dados.imagem}" alt="${dados.nome}">
+        <h3>${dados.nome}</h3>
+        <p>${dados.bairro} - ${dados.cidade}/${dados.estado}</p>
+        <p>${dados.descricao}</p>
+        <p><strong>${
+          dados.objetivo === "Venda" 
+            ? "Preço: R$ " + dados.preco_venda.toLocaleString("pt-BR") 
+            : "Aluguel: R$ " + dados.valor_aluguel.toLocaleString("pt-BR")
+        }</strong></p>
+        <a href="${dados.contato.whatsapp}" target="_blank">📲 Falar com Karina</a>
+      `;
+
+      // Distribui conforme objetivo
+      if (dados.objetivo === "Aluguel") {
+        listaAluguel.appendChild(card);
+      } else if (dados.objetivo === "Venda") {
+        listaVendas.appendChild(card);
+      }
+    });
+  } catch (error) {
+    console.error("Erro ao carregar imóveis:", error);
+  }
 }
 
-// Carrega o JSON e renderiza os cards resumidos
-fetch("imoveis.json")
-    .then(response => response.json())
-    .then(imoveis => {
-        const container = document.getElementById("imoveis-container");
-
-        imoveis.forEach(imovel => {
-            const dados = imovel.dados_publicos;
-
-            // Caso o imóvel tenha várias unidades (ex: edifício com apartamentos)
-            if (dados.unidades && dados.unidades.length > 0) {
-                dados.unidades.forEach(unidade => {
-                    const codigoUnico = gerarCodigoUnico(imovel.codigo, unidade.numero);
-
-                    const card = document.createElement("div");
-                    card.classList.add("card");
-
-                    card.innerHTML = `
-            <a href="imovel.html?codigo=${codigoUnico}" class="card-link">
-              <img src="${dados.imagem}" alt="${dados.nome}">
-              <h2>${dados.nome} - ${unidade.numero}</h2>
-              <p><strong>Preço:</strong> R$ ${unidade.preco.toLocaleString("pt-BR")}</p>
-              <p><strong>Cidade:</strong> ${dados.cidade}/${dados.estado} - ${dados.bairro ?? ""}</p>
-              <p><strong>Quartos:</strong> ${unidade.quartos ?? "-"} | <strong>Banheiros:</strong> ${unidade.banheiros ?? "-"}</p>
-              <p><strong>Área útil:</strong> ${unidade.area_util ?? "-"} m²</p>
-              <p><strong>Vagas:</strong> ${unidade.vagas ?? "-"}</p>
-            </a>
-          `;
-
-                    container.appendChild(card);
-                });
-            } else {
-                // Imóveis sem unidades (casas, terrenos, etc.)
-                const card = document.createElement("div");
-                card.classList.add("card");
-
-                card.innerHTML = `
-          <a href="imovel.html?codigo=${imovel.codigo}" class="card-link">
-            <img src="${dados.imagem}" alt="${dados.nome}">
-            <h2>${dados.nome} ${dados.numero ? "- " + dados.numero : ""}</h2>
-            <p><strong>Preço:</strong> R$ ${dados.preco.toLocaleString("pt-BR")}</p>
-            <p><strong>Cidade:</strong> ${dados.cidade}/${dados.estado} - ${dados.bairro ?? ""}</p>
-            <p><strong>Quartos:</strong> ${dados.quartos ?? "-"} | <strong>Banheiros:</strong> ${dados.banheiros ?? "-"}</p>
-            <p><strong>Área útil:</strong> ${dados.area_util ?? "-"} m²</p>
-            <p><strong>Vagas:</strong> ${dados.vagas ?? "-"}</p>
-          </a>
-        `;
-
-                container.appendChild(card);
-            }
-        });
-    });
+// Executa ao carregar a página
+document.addEventListener("DOMContentLoaded", carregarImoveis);
