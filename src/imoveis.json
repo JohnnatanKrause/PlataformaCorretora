@@ -44,6 +44,7 @@
                 "../assets/imagens/grand-hudson/ap14/20.jpg",
                 "../assets/imagens/grand-hudson/ap14/21.jpg"
             ],
+            "video": "../assets/video/grand-hudson/ap14/01.mp4",
             "contato": {
                 "corretor(a)": "Karina Ruiz Barbosa",
                 "telefone": "+55 45 9 3300-2811",
@@ -103,6 +104,7 @@
             "../assets/imagens/grand-hudson/ap29/20.jpg",
             "../assets/imagens/grand-hudson/ap29/21.jpg"
         ],
+        "video": "../assets/video/grand-hudson/ap29/01.mp4",
         "contato": {
                 "corretor(a)": "Karina Ruiz Barbosa",
                 "telefone": "+55 45 9 3300-2811",
@@ -163,6 +165,7 @@
             "../assets/imagens/abraham-lincoln/ap203/21.jpg",
             "../assets/imagens/abraham-lincoln/ap203/22.jpg"
         ],
+        "video": "../assets/video/abraham-lincoln/ap203/01.mp4",
         "contato": {
                 "corretor(a)": "Karina Ruiz Barbosa",
                 "telefone": "+55 45 9 3300-2811",
@@ -223,6 +226,7 @@
             "../assets/imagens/abraham-lincoln/ap905/21.jpg",
             "../assets/imagens/abraham-lincoln/ap905/22.jpg"
         ],
+        "video": "../assets/video/abraham-lincoln/ap905/01.mp4",
         "contato": {
                 "corretor(a)": "Karina Ruiz Barbosa",
                 "telefone": "+55 45 9 3300-2811",
@@ -276,6 +280,7 @@
             "../assets/imagens/palladium-residence/ap801/14.jpg",
             "../assets/imagens/palladium-residence/ap801/15.jpg"
         ],
+        "video": null,
         "contato": {
                 "corretor(a)": "Karina Ruiz Barbosa",
                 "telefone": "+55 45 9 3300-2811",
@@ -329,6 +334,7 @@
             "../assets/imagens/palladium-residence/ap1101/14.jpg",
             "../assets/imagens/palladium-residence/ap1101/15.jpg"
         ],
+        "video": null,
         "contato": {
             "corretor(a)": "Karina Ruiz Barbosa",
             "telefone": "+55 45 9 3300-2811",
@@ -379,6 +385,7 @@
             "../assets/imagens/ilhas-do-lago/apF24/11.jpg",
             "../assets/imagens/ilhas-do-lago/apF24/12.jpg"
         ],
+        "video": null,
         "contato": {
             "corretor(a)": "Karina Ruiz Barbosa",
             "telefone": "+55 45 9 3300-2811",
@@ -429,6 +436,7 @@
             "../assets/imagens/ilhas-do-lago/apF24/11.jpg",
             "../assets/imagens/ilhas-do-lago/apF24/12.jpg"
         ],
+        "video": null,
         "contato": {
             "corretor(a)": "Karina Ruiz Barbosa",
             "telefone": "+55 45 9 3300-2811",
@@ -472,6 +480,7 @@
             "../assets/imagens/casa-jardim-americas/americas50/04.jpg",
             "../assets/imagens/casa-jardim-americas/americas50/05.jpg"
         ],
+        "video": null,
         "contato": {
             "corretor(a)": "Karina Ruiz Barbosa",
             "telefone": "+55 45 9 3300-2811",
@@ -515,6 +524,7 @@
             "../assets/imagens/casa-jardim-americas/americas50/04.jpg",
             "../assets/imagens/casa-jardim-americas/americas50/05.jpg"
         ],
+        "video": null,
         "contato": {
             "corretor(a)": "Karina Ruiz Barbosa",
             "telefone": "+55 45 9 3300-2811",
@@ -568,6 +578,7 @@
             "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/14.jpg",
             "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/15.jpg"
         ],
+        "video": null,
         "contato": {
             "corretor(a)": "Karina Ruiz Barbosa",
             "telefone": "+55 45 9 3300-2811",
@@ -621,6 +632,7 @@
             "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/14.jpg",
             "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/15.jpg"
         ],
+        "video": null,
         "contato": {
             "corretor(a)": "Karina Ruiz Barbosa",
             "telefone": "+55 45 9 3300-2811",

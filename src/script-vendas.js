@@ -2,7 +2,7 @@ function criarCard(imovel) {
   const dados = imovel.dados_publicos;
 
   return `
-    <div class="card" onclick="location.href='imovel.html?id=${imovel.codigo}'">
+    <div class="card" onclick="location.href='imovel.html?codigo=${imovel.codigo}'">
       <div class="card-img">
         <img src="${dados.imagem}" alt="${dados.nome}">
       </div>
@@ -18,7 +18,7 @@ function criarCard(imovel) {
   `;
 }
 
-fetch("./imoveis.json") // ajuste o caminho se necessário
+fetch("imoveis.json") // ajuste o caminho se necessário
   .then(res => res.json())
   .then(data => {
     const lista = document.getElementById("lista-vendas");
