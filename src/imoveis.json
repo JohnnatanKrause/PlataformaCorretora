@@ -15,9 +15,11 @@
             "quartos": 4,
             "banheiros": 3,
             "vagas": 2,
-            "preco": 560000,
-            "condominio": 450,
             "garagens": ["23", "24"],
+            "preco_venda": 560000,
+            "valor_aluguel": null,
+            "condominio": 450,
+            "iptu": 1200,
             "descricao": "Apartamento semimobiliado no Edifício Residencial Grand Hudson, com 3 quartos (1 suíte), 2 vagas de garagem, cozinha planejada com cooktp e coifa, Ar condicionados, Suite planejada, Escritorio planejado, sala com dois ambientes e sacada com churrasqueira.",
             "fotos": [
                 "../assets/imagens/grand-hudson/ap14/01.jpg",
@@ -42,8 +44,9 @@
                 "../assets/imagens/grand-hudson/ap14/20.jpg",
                 "../assets/imagens/grand-hudson/ap14/21.jpg"
             ],
+            "video": "../assets/video/grand-hudson/ap14/01.mp4",
             "contato": {
-                "corretor(a)": "Karina Riuz",
+                "corretor(a)": "Karina Ruiz Barbosa",
                 "telefone": "+55 45 9 3300-2811",
                 "whatsapp": "https://wa.me/5545933002811"
             }
@@ -60,7 +63,7 @@
     "codigo": "IMV002",
     "dados_publicos": {
         "tipo_imovel": "Apartamento",
-        "objetivo": "Venda",
+        "objetivo": "Aluguel",
         "nome": "Residencial Grand Hudson",
         "cidade": "Cascavel",
         "estado": "PR",
@@ -72,9 +75,11 @@
         "quartos": 3,
         "banheiros": 2,
         "vagas": 2,
-        "preco": 650000,
-        "condominio": 450,
         "garagens": ["13", "14"],
+        "preco_venda": null,
+        "valor_aluguel": 3700,
+        "condominio": 450,
+        "iptu": 1200,        
         "descricao": "Apartamento semimobiliado no Edifício Residencial Grand Hudson, com 3 quartos (1 suíte), 2 vagas de garagem, cozinha planejada com cooktp, geladeira, lava louças e coifa, Ar condicionados em todos os cômodos, suíte planejada, sala planejada com dois ambientes e sacada com churrasqueira.",
         "fotos": [
             "../assets/imagens/grand-hudson/ap29/01.jpg",
@@ -99,8 +104,9 @@
             "../assets/imagens/grand-hudson/ap29/20.jpg",
             "../assets/imagens/grand-hudson/ap29/21.jpg"
         ],
+        "video": "../assets/video/grand-hudson/ap29/01.mp4",
         "contato": {
-                "corretor(a)": "Karina Riuz",
+                "corretor(a)": "Karina Ruiz Barbosa",
                 "telefone": "+55 45 9 3300-2811",
                 "whatsapp": "https://wa.me/5545933002811"
             }
@@ -129,7 +135,11 @@
         "quartos": 3,
         "banheiros": 5,
         "vagas": 2,
-        "preco": 1680000,
+        "garagens": ["23", "24"],
+        "preco_venda": 1680000,
+        "valor_aluguel": null,
+        "condominio": 1100,
+        "iptu": 1700,
         "descricao": "Apartamento no 2º andar com vista privilegiada.",
         "fotos": [
             "../assets/imagens/abraham-lincoln/ap203/01.jpg",
@@ -155,8 +165,9 @@
             "../assets/imagens/abraham-lincoln/ap203/21.jpg",
             "../assets/imagens/abraham-lincoln/ap203/22.jpg"
         ],
+        "video": "../assets/video/abraham-lincoln/ap203/01.mp4",
         "contato": {
-                "corretor(a)": "Karina Riuz",
+                "corretor(a)": "Karina Ruiz Barbosa",
                 "telefone": "+55 45 9 3300-2811",
                 "whatsapp": "https://wa.me/5545933002811"
             }
@@ -173,7 +184,7 @@
     "codigo": "IMV004",
     "dados_publicos": {
         "tipo_imovel": "Apartamento",
-        "objetivo": "Venda",
+        "objetivo": "Aluguel",
         "nome": "Edifício Abraham Lincoln",
         "cidade": "Cascavel",
         "estado": "PR",
@@ -185,7 +196,11 @@
         "quartos": 3,
         "banheiros": 5,
         "vagas": 2,
-        "preco": 1850000,
+        "garagens": ["34", "35"],
+        "preco_venda": null,
+        "valor_aluguel": 4500,
+        "condominio": 1100,
+        "iptu": 1700,
         "descricao": "Apartamento no 9º andar, excelente iluminação natural.",
         "fotos": [
             "../assets/imagens/abraham-lincoln/ap905/01.jpg",
@@ -211,8 +226,9 @@
             "../assets/imagens/abraham-lincoln/ap905/21.jpg",
             "../assets/imagens/abraham-lincoln/ap905/22.jpg"
         ],
+        "video": "../assets/video/abraham-lincoln/ap905/01.mp4",
         "contato": {
-                "corretor(a)": "Karina Riuz",
+                "corretor(a)": "Karina Ruiz Barbosa",
                 "telefone": "+55 45 9 3300-2811",
                 "whatsapp": "https://wa.me/5545933002811"
             }
@@ -231,7 +247,7 @@
         "tipo_imovel": "Apartamento",
         "objetivo": "Venda",
         "nome": "Edifício Palladium Residence",
-        "cidade": "Cascavel",
+        "cidade": "Londrina",
         "estado": "PR",
         "bairro": "Centro",
         "endereco": "Rua Paranagua",
@@ -241,7 +257,11 @@
         "quartos": 4,
         "banheiros": 3,
         "vagas": 2,
-        "preco": 550000,
+        "garagens": ["07", "08"],
+        "preco_venda": 680000,
+        "valor_aluguel": null,
+        "condominio": 1000,
+        "iptu": 1200,
         "descricao": "Apartamento no 8º andar com vista privilegiada, todo planejado.",
         "fotos": [
             "../assets/imagens/palladium-residence/ap801/01.jpg",
@@ -260,8 +280,9 @@
             "../assets/imagens/palladium-residence/ap801/14.jpg",
             "../assets/imagens/palladium-residence/ap801/15.jpg"
         ],
+        "video": null,
         "contato": {
-                "corretor(a)": "Karina Riuz",
+                "corretor(a)": "Karina Ruiz Barbosa",
                 "telefone": "+55 45 9 3300-2811",
                 "whatsapp": "https://wa.me/5545933002811"
             }
@@ -278,9 +299,9 @@
     "codigo": "IMV006",
     "dados_publicos": {
         "tipo_imovel": "Apartamento",
-        "objetivo": "Venda",
+        "objetivo": "Aluguel",
         "nome": "Edifício Palladium Residence",
-        "cidade": "Cascavel",
+        "cidade": "Londrina",
         "estado": "PR",
         "bairro": "Centro",
         "endereco": "Rua Paranagua",
@@ -290,7 +311,11 @@
         "quartos": 3,
         "banheiros": 3,
         "vagas": 2,
-        "preco": 650000,
+        "garagens": ["11", "12"],
+        "preco_venda": null,
+        "valor_aluguel": 2500,
+        "condominio": 1100,
+        "iptu": 1700,
         "descricao": "Apartamento no 11º andar, excelente iluminação natural.",
         "fotos": [
             "../assets/imagens/palladium-residence/ap1101/01.jpg",
@@ -309,8 +334,9 @@
             "../assets/imagens/palladium-residence/ap1101/14.jpg",
             "../assets/imagens/palladium-residence/ap1101/15.jpg"
         ],
+        "video": null,
         "contato": {
-            "corretor(a)": "Karina Riuz",
+            "corretor(a)": "Karina Ruiz Barbosa",
             "telefone": "+55 45 9 3300-2811",
             "whatsapp": "https://wa.me/5545933002811"
         }
@@ -332,14 +358,18 @@
         "cidade": "Caldas Novas",
         "estado": "GO",
         "bairro": "Pioneiros",
-        "endereco": "Avenida Caminho do Lago, 4600, na região do Lago Corumbá, em Caldas Novas - GO, Rua das Flores",
-        "numero": "300",
+        "endereco": "Avenida Caminho do Lago",
+        "numero": "300 - AP 302",
         "imagem": "../assets/imagens/ilhas-do-lago/apF24/principal.jpg",
         "area_util": 66.2,
         "quartos": 2,
         "banheiros": 2,
-        "vagas": 1,
-        "preco": 45000,
+        "vagas": 1,        
+        "garagens": 32,
+        "preco_venda": 42000,
+        "valor_aluguel": null,
+        "condominio": 80.25,
+        "iptu": 700,
         "descricao": "Cota de apartamento em Resort, planejado e mobiliado, confortável, funcional e prático, ideal para família curtir férias e viagens a passeios.",
         "fotos": [
             "../assets/imagens/ilhas-do-lago/apF24/01.jpg",
@@ -355,8 +385,9 @@
             "../assets/imagens/ilhas-do-lago/apF24/11.jpg",
             "../assets/imagens/ilhas-do-lago/apF24/12.jpg"
         ],
+        "video": null,
         "contato": {
-            "corretor(a)": "Karina Riuz",
+            "corretor(a)": "Karina Ruiz Barbosa",
             "telefone": "+55 45 9 3300-2811",
             "whatsapp": "https://wa.me/5545933002811"
         }
@@ -372,30 +403,42 @@
     {
     "codigo": "IMV008",
     "dados_publicos": {
-        "tipo_imovel": "Casa",
-        "objetivo": "Venda",
-        "nome": "Casa Jardim das Américas",
-        "cidade": "Cascavel",
-        "estado": "PR",
-        "bairro": "Jardim das Américas",
-        "endereco": "Rua das Palmeiras",
-        "numero": "50",
-        "imagem": "../assets/imagens/casa-jardim-americas/americas50/principal.jpg",
-        "area_util": 180,
-        "quartos": 4,
-        "banheiros": 3,
-        "vagas": 3,
-        "preco": 750000,
-        "descricao": "Casa espaçosa com área gourmet e quintal amplo.",
+        "tipo_imovel": "Apartamento",
+        "objetivo": "Aluguel",
+        "nome": "Resort Ilhas do Lago",
+        "cidade": "Caldas Novas",
+        "estado": "GO",
+        "bairro": "Pioneiros",
+        "endereco": "Avenida Caminho do Lago",
+        "numero": "300 - AP 204",
+        "imagem": "../assets/imagens/ilhas-do-lago/apF24/principal.jpg",
+        "area_util": 66.2,
+        "quartos": 2,
+        "banheiros": 2,
+        "vagas": 1,        
+        "garagens": 24,
+        "preco_venda": null,
+        "valor_aluguel": 3000,
+        "condominio": null,
+        "iptu": null,
+        "descricao": "Cota de apartamento em Resort, planejado e mobiliado, confortável, funcional e prático, ideal para família curtir férias e viagens a passeios.",
         "fotos": [
-            "../assets/imagens/casa-jardim-americas/americas50/01.jpg",
-            "../assets/imagens/casa-jardim-americas/americas50/02.jpg",
-            "../assets/imagens/casa-jardim-americas/americas50/03.jpg",
-            "../assets/imagens/casa-jardim-americas/americas50/04.jpg",
-            "../assets/imagens/casa-jardim-americas/americas50/05.jpg"
+            "../assets/imagens/ilhas-do-lago/apF24/01.jpg",
+            "../assets/imagens/ilhas-do-lago/apF24/02.jpg",
+            "../assets/imagens/ilhas-do-lago/apF24/03.jpg",
+            "../assets/imagens/ilhas-do-lago/apF24/04.jpg",
+            "../assets/imagens/ilhas-do-lago/apF24/05.jpg",
+            "../assets/imagens/ilhas-do-lago/apF24/06.jpg",
+            "../assets/imagens/ilhas-do-lago/apF24/07.jpg",
+            "../assets/imagens/ilhas-do-lago/apF24/08.jpg",
+            "../assets/imagens/ilhas-do-lago/apF24/09.jpg",
+            "../assets/imagens/ilhas-do-lago/apF24/10.jpg",
+            "../assets/imagens/ilhas-do-lago/apF24/11.jpg",
+            "../assets/imagens/ilhas-do-lago/apF24/12.jpg"
         ],
+        "video": null,
         "contato": {
-            "corretor(a)": "Karina Riuz",
+            "corretor(a)": "Karina Ruiz Barbosa",
             "telefone": "+55 45 9 3300-2811",
             "whatsapp": "https://wa.me/5545933002811"
         }
@@ -411,20 +454,112 @@
     {
     "codigo": "IMV009",
     "dados_publicos": {
+        "tipo_imovel": "Casa",
+        "objetivo": "Venda",
+        "nome": "Casa Jardim das Américas",
+        "cidade": "São Paulo",
+        "estado": "SP",
+        "bairro": "Jardim das Américas",
+        "endereco": "Rua das Palmeiras",
+        "numero": "50",
+        "imagem": "../assets/imagens/casa-jardim-americas/americas50/principal.jpg",
+        "area_util": 180,
+        "quartos": 4,
+        "banheiros": 3,
+        "vagas": 3,        
+        "garagens": ["01", "02", "03"],
+        "preco_venda": 1150000,
+        "valor_aluguel": null,
+        "condominio": null,
+        "iptu": 2700,
+        "descricao": "Casa espaçosa com área gourmet e quintal amplo.",
+        "fotos": [
+            "../assets/imagens/casa-jardim-americas/americas50/01.jpg",
+            "../assets/imagens/casa-jardim-americas/americas50/02.jpg",
+            "../assets/imagens/casa-jardim-americas/americas50/03.jpg",
+            "../assets/imagens/casa-jardim-americas/americas50/04.jpg",
+            "../assets/imagens/casa-jardim-americas/americas50/05.jpg"
+        ],
+        "video": null,
+        "contato": {
+            "corretor(a)": "Karina Ruiz Barbosa",
+            "telefone": "+55 45 9 3300-2811",
+            "whatsapp": "https://wa.me/5545933002811"
+        }
+    },
+    "dados_internos": {
+        "proprietario": "Johnnatan Krause Ribeiro Moreno",
+        "telefone": "+55 45 9 8821-3899",
+        "email": "johnnatankrause@gmail.com",
+        "matricula": "MAT-14-PR",
+        "observacoes": "Apartamento desocupado, Disponível para visitas!"
+    }
+    },
+{
+    "codigo": "IMV010",
+    "dados_publicos": {
+        "tipo_imovel": "Casa",
+        "objetivo": "Aluguel",
+        "nome": "Casa Jardim das Américas",
+        "cidade": "Campo Grande",
+        "estado": "MS",
+        "bairro": "Jardim das Américas",
+        "endereco": "Rua das Palmeiras",
+        "numero": "50",
+        "imagem": "../assets/imagens/casa-jardim-americas/americas50/principal.jpg",
+        "area_util": 180,
+        "quartos": 4,
+        "banheiros": 3,
+        "vagas": 3,        
+        "garagens": ["01", "02", "03"],
+        "preco_venda": null,
+        "valor_aluguel": 8000,
+        "condominio": 950,
+        "iptu": 2700,
+        "descricao": "Casa espaçosa com área gourmet e quintal amplo.",
+        "fotos": [
+            "../assets/imagens/casa-jardim-americas/americas50/01.jpg",
+            "../assets/imagens/casa-jardim-americas/americas50/02.jpg",
+            "../assets/imagens/casa-jardim-americas/americas50/03.jpg",
+            "../assets/imagens/casa-jardim-americas/americas50/04.jpg",
+            "../assets/imagens/casa-jardim-americas/americas50/05.jpg"
+        ],
+        "video": null,
+        "contato": {
+            "corretor(a)": "Karina Ruiz Barbosa",
+            "telefone": "+55 45 9 3300-2811",
+            "whatsapp": "https://wa.me/5545933002811"
+        }
+    },
+    "dados_internos": {
+        "proprietario": "Johnnatan Krause Ribeiro Moreno",
+        "telefone": "+55 45 9 8821-3899",
+        "email": "johnnatankrause@gmail.com",
+        "matricula": "MAT-14-PR",
+        "observacoes": "Apartamento desocupado, Disponível para visitas!"
+    }
+    },
+    {
+    "codigo": "IMV011",
+    "dados_publicos": {
         "tipo_imovel": "Terreno",
         "objetivo": "Venda",
         "nome": "Terreno na Av. Brasil",
-        "cidade": "Cascavel",
-        "estado": "PR",
+        "cidade": "Goiania",
+        "estado": "GO",
         "bairro": "Centro",
         "endereco": "Av. Brasil",
         "numero": "3000",
         "imagem": "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/principal.jpg",
         "area_util": 400,
-        "quartos": 0,
-        "banheiros": 0,
-        "vagas": 0,
-        "preco": 350000,
+        "quartos": null,
+        "banheiros": null,
+        "vagas": null,        
+        "garagens": null,
+        "preco_venda": 628000,
+        "valor_aluguel": null,
+        "condominio": null,
+        "iptu": 520,
         "descricao": "Terreno bem localizado, ideal para construção comercial.",
         "fotos": [
             "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/01.jpg",
@@ -443,8 +578,63 @@
             "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/14.jpg",
             "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/15.jpg"
         ],
+        "video": null,
         "contato": {
-            "corretor(a)": "Karina Riuz",
+            "corretor(a)": "Karina Ruiz Barbosa",
+            "telefone": "+55 45 9 3300-2811",
+            "whatsapp": "https://wa.me/5545933002811"
+        }
+    },
+    "dados_internos": {
+        "proprietario": "Johnnatan Krause Ribeiro Moreno",
+        "telefone": "+55 45 9 8821-3899",
+        "email": "johnnatankrause@gmail.com",
+        "matricula": "MAT-14-PR",
+        "observacoes": "Apartamento desocupado, Disponível para visitas!"
+    }
+},
+{
+    "codigo": "IMV011",
+    "dados_publicos": {
+        "tipo_imovel": "Terreno",
+        "objetivo": "Aluguel",
+        "nome": "Terreno na Av. Brasil",
+        "cidade": "Goiania",
+        "estado": "GO",
+        "bairro": "Centro",
+        "endereco": "Av. Brasil",
+        "numero": "3000",
+        "imagem": "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/principal.jpg",
+        "area_util": 400,
+        "quartos": null,
+        "banheiros": null,
+        "vagas": null,        
+        "garagens": null,
+        "preco_venda": null,
+        "valor_aluguel": 3500,
+        "condominio": null,
+        "iptu": 520,
+        "descricao": "Terreno comercial bem localizado, construimos da forma que o seu negócio você precisa para prosperar!.",
+        "fotos": [
+            "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/01.jpg",
+            "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/02.jpg",
+            "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/03.jpg",
+            "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/04.jpg",
+            "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/05.jpg",
+            "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/06.jpg",
+            "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/07.jpg",
+            "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/08.jpg",
+            "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/09.jpg",
+            "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/10.jpg",
+            "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/11.jpg",
+            "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/12.jpg",
+            "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/13.jpg",
+            "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/14.jpg",
+            "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/15.jpg"
+        ],
+        "video": null,
+        "contato": {
+            "corretor(a)": "Karina Ruiz Barbosa",
             "telefone": "+55 45 9 3300-2811",
             "whatsapp": "https://wa.me/5545933002811"
         }

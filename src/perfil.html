@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - Karina Ruiz</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="icon" href="../assets/logos/03 - kr-favicon.png" type="image/png">
+</head>
+
+<body class="perfil">
+    <!-- Cabeçalho padrão -->
+    <div id="cabecalho"></div>
+
+    <!-- Conteúdo principal -->
+    <main class="perfil-container">
+        <!-- Coluna esquerda: Foto + dados -->
+        <div class="perfil-esquerda">
+            <img src="../assets/imagens/corretora-perfil.jpg" alt="Foto da Corretora" class="foto-perfil">
+            <h1>Corretora Karina Ruiz</h1>
+            <p><strong>CNPJ:</strong> 60.776.740/0001-46</p>
+            <p><strong>CRECI:</strong> F51619</p>
+        </div>
+
+        <!-- Coluna central: Mensagem -->
+        <div class="perfil-centro">
+            <p>Corretora autônoma especializada em imóveis residenciais e comerciais.<br>
+                Vendo, alugo, avalio e ajudo você a encontrar o seu imóvel ideal.<br></p>
+            <blockquote>"Realize seu sonho com segurança!"</blockquote>
+        </div>
+
+        <!-- Coluna direita: Formulário -->
+        <div class="perfil-direita">
+            <h2>Quer vender ou alugar seu imóvel?</h2>
+            <p>Preencha abaixo e fale direto com Karina pelo WhatsApp.</p>
+            <form id="whatsappForm">
+                <label for="nome">Seu nome:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+
+                <label for="tipo">Você tem imóvel para:</label>
+                <select id="tipo" name="tipo" required>
+                    <option value="venda">Venda</option>
+                    <option value="aluguel">Aluguel</option>
+                </select>
+
+                <label for="endereco">Endereço do imóvel:</label>
+                <input type="text" id="endereco" name="endereco" placeholder="Rua, número, bairro">
+
+                <label for="valor">Valor:</label>
+                <input type="text" id="valor" name="valor" placeholder="Ex: R$ 250.000 ou R$ 1.200/mês">
+
+                <button type="submit">📲 Falar com Karina no WhatsApp</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Rodapé padrão -->
+    <div id="rodape"></div>
+
+    <!-- Script WhatsApp -->
+    <script>
+        document.getElementById("whatsappForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+            const nome = document.getElementById("nome").value;
+            const tipo = document.getElementById("tipo").value;
+            const endereco = document.getElementById("endereco").value;
+            const valor = document.getElementById("valor").value;
+
+            const mensagem = `Olá, eu sou ${nome}. Tenho um imóvel para ${tipo}. Endereço: ${endereco}. Valor: ${valor}.`;
+            const url = `https://wa.me/5545933002811?text=${encodeURIComponent(mensagem)}`;
+            window.open(url, "_blank");
+        });
+
+        // Inclusão automática do cabeçalho e rodapé
+        fetch("cabecalho.html")
+            .then(res => res.text())
+            .then(data => document.getElementById("cabecalho").innerHTML = data);
+
+        fetch("rodape.html")
+            .then(res => res.text())
+            .then(data => document.getElementById("rodape").innerHTML = data);
+    </script>
+</body>
+
+</html>

@@ -31,7 +31,7 @@ fetch("imoveis.json")
 
         if (imovelEncontrado) {
             const dados = imovelEncontrado.dados_publicos;
-            const container = document.getElementById("detalhes");
+            const container = document.getElementById("detalhes-imovel");
 
             // Galeria de fotos com Swiper
             let fotos = [];
@@ -76,7 +76,15 @@ fetch("imoveis.json")
                   <p><strong>Tipo:</strong> ${dados.tipo_imovel}</p>                
                   <p><strong>Objetivo:</strong> ${dados.objetivo}</p>
                   <p><strong>Área útil:</strong> ${(unidadeEncontrada?.area_util ?? dados.area_util) ?? "-"} m²</p>
-                  <p><strong>Investimento:</strong> 💰 R$ ${(unidadeEncontrada?.preco ?? dados.preco).toLocaleString("pt-BR")}</p>
+                  <p><strong>Investimento:</strong> 💰 R$ ${(
+                    unidadeEncontrada?.preco ??
+                    dados.preco ??
+                    dados.preco_venda ??
+                    dados.valor_aluguel ??
+                    0
+                ).toLocaleString("pt-BR")
+                }</p>
+
                   <p><strong>Localização:</strong> ${dados.endereco ?? ""}, ${dados.numero ?? ""}, ${unidadeEncontrada ? "- AP " + unidadeEncontrada.numero : ""} ${dados.bairro ? dados.bairro + " - " : ""} ${dados.cidade}/${dados.estado} </p>
                   <p><strong>Quartos:</strong> 🛏️ ${(unidadeEncontrada?.quartos ?? dados.quartos) ?? "-"}</p>
                   <p><strong>Banheiros:</strong> 🚿 ${(unidadeEncontrada?.banheiros ?? dados.banheiros) ?? "-"}</p>
@@ -84,9 +92,20 @@ fetch("imoveis.json")
                   
                   ${dados.condominio ? `<p><strong>Condomínio:</strong> R$ ${dados.condominio}</p>` : ""}
                   <p>${unidadeEncontrada?.descricao ?? dados.descricao}</p>
+
                   <a class="btn-whatsapp" 
-                     href="${dados.contato.whatsapp}?text=${encodeURIComponent("Olá vim do site e tenho interesse no imóvel " + referencia)}" 
-                     target="_blank">Falar no WhatsApp</a>
+   href="${dados.contato.whatsapp}?text=${encodeURIComponent(
+     "Olá, vim do site e tenho interesse no imóvel " + referencia + 
+     ". Veja os detalhes aqui: " + window.location.href
+   )}" 
+   target="_blank">Falar no WhatsApp</a>
+
+
+                  ${dados.video ? `
+                    <a class="btn-video" href="${dados.video}" target="_blank">
+                      🎥 Tour Online
+                    </a>
+                  ` : ""}
                 </div>
               </div>
             `;
@@ -106,6 +125,6 @@ fetch("imoveis.json")
                 });
             }
         } else {
-            document.getElementById("detalhes").innerHTML = "<p>Imóvel não encontrado.</p>";
+            document.getElementById("detalhes-imovel").innerHTML = "<p>Imóvel não encontrado.</p>";
         }
     });
