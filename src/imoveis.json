@@ -76,7 +76,7 @@
         "vagas": 2,
         "garagens": ["13", "14"],
         "preco_venda": null,
-        "valor_aluguel": 2500,
+        "valor_aluguel": 3700,
         "condominio": 450,
         "iptu": 1200,        
         "descricao": "Apartamento semimobiliado no Edifício Residencial Grand Hudson, com 3 quartos (1 suíte), 2 vagas de garagem, cozinha planejada com cooktp, geladeira, lava louças e coifa, Ar condicionados em todos os cômodos, suíte planejada, sala planejada com dois ambientes e sacada com churrasqueira.",
@@ -195,7 +195,7 @@
         "vagas": 2,
         "garagens": ["34", "35"],
         "preco_venda": null,
-        "valor_aluguel": 2500,
+        "valor_aluguel": 4500,
         "condominio": 1100,
         "iptu": 1700,
         "descricao": "Apartamento no 9º andar, excelente iluminação natural.",
@@ -352,14 +352,14 @@
         "cidade": "Caldas Novas",
         "estado": "GO",
         "bairro": "Pioneiros",
-        "endereco": "Avenida Caminho do Lago, 4600",
-        "numero": "300",
+        "endereco": "Avenida Caminho do Lago",
+        "numero": "300 - AP 302",
         "imagem": "../assets/imagens/ilhas-do-lago/apF24/principal.jpg",
         "area_util": 66.2,
         "quartos": 2,
         "banheiros": 2,
         "vagas": 1,        
-        "garagens": 24,
+        "garagens": 32,
         "preco_venda": 42000,
         "valor_aluguel": null,
         "condominio": 80.25,
@@ -395,6 +395,56 @@
     },
     {
     "codigo": "IMV008",
+    "dados_publicos": {
+        "tipo_imovel": "Apartamento",
+        "objetivo": "Aluguel",
+        "nome": "Resort Ilhas do Lago",
+        "cidade": "Caldas Novas",
+        "estado": "GO",
+        "bairro": "Pioneiros",
+        "endereco": "Avenida Caminho do Lago",
+        "numero": "300 - AP 204",
+        "imagem": "../assets/imagens/ilhas-do-lago/apF24/principal.jpg",
+        "area_util": 66.2,
+        "quartos": 2,
+        "banheiros": 2,
+        "vagas": 1,        
+        "garagens": 24,
+        "preco_venda": null,
+        "valor_aluguel": 3000,
+        "condominio": null,
+        "iptu": null,
+        "descricao": "Cota de apartamento em Resort, planejado e mobiliado, confortável, funcional e prático, ideal para família curtir férias e viagens a passeios.",
+        "fotos": [
+            "../assets/imagens/ilhas-do-lago/apF24/01.jpg",
+            "../assets/imagens/ilhas-do-lago/apF24/02.jpg",
+            "../assets/imagens/ilhas-do-lago/apF24/03.jpg",
+            "../assets/imagens/ilhas-do-lago/apF24/04.jpg",
+            "../assets/imagens/ilhas-do-lago/apF24/05.jpg",
+            "../assets/imagens/ilhas-do-lago/apF24/06.jpg",
+            "../assets/imagens/ilhas-do-lago/apF24/07.jpg",
+            "../assets/imagens/ilhas-do-lago/apF24/08.jpg",
+            "../assets/imagens/ilhas-do-lago/apF24/09.jpg",
+            "../assets/imagens/ilhas-do-lago/apF24/10.jpg",
+            "../assets/imagens/ilhas-do-lago/apF24/11.jpg",
+            "../assets/imagens/ilhas-do-lago/apF24/12.jpg"
+        ],
+        "contato": {
+            "corretor(a)": "Karina Riuz",
+            "telefone": "+55 45 9 3300-2811",
+            "whatsapp": "https://wa.me/5545933002811"
+        }
+    },
+    "dados_internos": {
+        "proprietario": "Johnnatan Krause Ribeiro Moreno",
+        "telefone": "+55 45 9 8821-3899",
+        "email": "johnnatankrause@gmail.com",
+        "matricula": "MAT-14-PR",
+        "observacoes": "Apartamento desocupado, Disponível para visitas!"
+    }
+    },
+    {
+    "codigo": "IMV009",
     "dados_publicos": {
         "tipo_imovel": "Casa",
         "objetivo": "Venda",
@@ -436,8 +486,51 @@
         "observacoes": "Apartamento desocupado, Disponível para visitas!"
     }
     },
+{
+    "codigo": "IMV010",
+    "dados_publicos": {
+        "tipo_imovel": "Casa",
+        "objetivo": "Aluguel",
+        "nome": "Casa Jardim das Américas",
+        "cidade": "Cascavel",
+        "estado": "PR",
+        "bairro": "Jardim das Américas",
+        "endereco": "Rua das Palmeiras",
+        "numero": "50",
+        "imagem": "../assets/imagens/casa-jardim-americas/americas50/principal.jpg",
+        "area_util": 180,
+        "quartos": 4,
+        "banheiros": 3,
+        "vagas": 3,        
+        "garagens": ["01", "02", "03"],
+        "preco_venda": null,
+        "valor_aluguel": 8000,
+        "condominio": 950,
+        "iptu": 2700,
+        "descricao": "Casa espaçosa com área gourmet e quintal amplo.",
+        "fotos": [
+            "../assets/imagens/casa-jardim-americas/americas50/01.jpg",
+            "../assets/imagens/casa-jardim-americas/americas50/02.jpg",
+            "../assets/imagens/casa-jardim-americas/americas50/03.jpg",
+            "../assets/imagens/casa-jardim-americas/americas50/04.jpg",
+            "../assets/imagens/casa-jardim-americas/americas50/05.jpg"
+        ],
+        "contato": {
+            "corretor(a)": "Karina Riuz",
+            "telefone": "+55 45 9 3300-2811",
+            "whatsapp": "https://wa.me/5545933002811"
+        }
+    },
+    "dados_internos": {
+        "proprietario": "Johnnatan Krause Ribeiro Moreno",
+        "telefone": "+55 45 9 8821-3899",
+        "email": "johnnatankrause@gmail.com",
+        "matricula": "MAT-14-PR",
+        "observacoes": "Apartamento desocupado, Disponível para visitas!"
+    }
+    },
     {
-    "codigo": "IMV009",
+    "codigo": "IMV011",
     "dados_publicos": {
         "tipo_imovel": "Terreno",
         "objetivo": "Venda",
@@ -458,6 +551,59 @@
         "condominio": null,
         "iptu": 520,
         "descricao": "Terreno bem localizado, ideal para construção comercial.",
+        "fotos": [
+            "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/01.jpg",
+            "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/02.jpg",
+            "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/03.jpg",
+            "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/04.jpg",
+            "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/05.jpg",
+            "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/06.jpg",
+            "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/07.jpg",
+            "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/08.jpg",
+            "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/09.jpg",
+            "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/10.jpg",
+            "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/11.jpg",
+            "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/12.jpg",
+            "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/13.jpg",
+            "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/14.jpg",
+            "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/15.jpg"
+        ],
+        "contato": {
+            "corretor(a)": "Karina Riuz",
+            "telefone": "+55 45 9 3300-2811",
+            "whatsapp": "https://wa.me/5545933002811"
+        }
+    },
+    "dados_internos": {
+        "proprietario": "Johnnatan Krause Ribeiro Moreno",
+        "telefone": "+55 45 9 8821-3899",
+        "email": "johnnatankrause@gmail.com",
+        "matricula": "MAT-14-PR",
+        "observacoes": "Apartamento desocupado, Disponível para visitas!"
+    }
+},
+   {
+    "codigo": "IMV011",
+    "dados_publicos": {
+        "tipo_imovel": "Terreno",
+        "objetivo": "Aluguel",
+        "nome": "Terreno na Av. Brasil",
+        "cidade": "Cascavel",
+        "estado": "PR",
+        "bairro": "Centro",
+        "endereco": "Av. Brasil",
+        "numero": "3000",
+        "imagem": "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/principal.jpg",
+        "area_util": 400,
+        "quartos": null,
+        "banheiros": null,
+        "vagas": null,        
+        "garagens": null,
+        "preco_venda": null,
+        "valor_aluguel": 3500,
+        "condominio": null,
+        "iptu": 520,
+        "descricao": "Terreno comercial bem localizado, construimos da forma que o seu negócio você precisa para prosperar!.",
         "fotos": [
             "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/01.jpg",
             "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/02.jpg",

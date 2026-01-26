@@ -2,43 +2,49 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imóveis à Venda - Karina Ruiz</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="../assets/logos/kr-favicon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imóveis à Venda - Karina Ruiz</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="../assets/logos/kr-favicon.png">
 </head>
 
-<body class="catalogo">
-    <!-- Cabeçalho padrão -->
-    <div id="cabecalho"></div>
+<body class="catalogo vendas">
+  <!-- Cabeçalho padrão -->
+  <div id="cabecalho"></div>
 
-    <!-- Conteúdo principal -->
-
-    <!-- Seção de imóveis à venda -->
+  <main>
     <section id="vendas">
-        <h2>Imóveis à Venda</h2>
-        <div id="lista-vendas" class="grid"></div>
+      <div class="titulo-filtro">
+  <h1 class="page-title">Imóveis à Venda</h1>
+  <div class="filtros">
+    <label for="filtro-vendas">Ordenar por:</label>
+    <select id="filtro-vendas">
+      <option value="preco">Preço (do menor para maior)</option>
+      <option value="quartos">Quartos (do menor para maior)</option>
+      <option value="area">Área útil (do menor para maior)</option>
+    </select>
+  </div>
+</div>
+<div id="lista-vendas"></div>
+
     </section>
+  </main>
 
-    <!-- Rodapé padrão -->
-    <div id="rodape"></div>
+  <!-- Rodapé padrão -->
+  <div id="rodape"></div>
 
-    <script>
+  <script>
+    // Inclusão automática do cabeçalho e rodapé
+    fetch("cabecalho.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("cabecalho").innerHTML = data);
 
-        // Inclusão automática do cabeçalho e rodapé
-        fetch("cabecalho.html")
-            .then(res => res.text())
-            .then(data => document.getElementById("cabecalho").innerHTML = data);
+    fetch("rodape.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("rodape").innerHTML = data);
+  </script>
 
-        fetch("rodape.html")
-            .then(res => res.text())
-            .then(data => document.getElementById("rodape").innerHTML = data);
-        <!-- Script para carregar apenas imóveis de aluguel -->
-
-    </script>
-    <!-- Script para carregar apenas imóveis de venda -->
-    <script src="script-vendas.js"></script>
+  <script src="script-vendas.js"></script>
 </body>
-
 </html>
