@@ -2,27 +2,43 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Detalhes do Imóvel</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Detalhes do Imóvel</title>
+  <link rel="stylesheet" href="style.css">
 
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body class="imovel">
+  <!-- Cabeçalho padrão -->
+  <div id="cabecalho"></div>
 
-    <header>
-        <h1>Detalhes do Imóvel</h1>
-    </header>
+  <main>
+    <section id="detalhes-imovel">
+      <!-- Aqui o JS vai montar os detalhes do imóvel -->
+    </section>
+  </main>
 
-    <main id="detalhes"></main>
+  <!-- Rodapé padrão -->
+  <div id="rodape"></div>
 
-    <!-- Seu script que monta os detalhes -->
-    <script src="imovel.js"></script>
+  <!-- Inclusão automática do cabeçalho e rodapé -->
+  <script>
+    fetch("cabecalho.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("cabecalho").innerHTML = data);
 
-    <!-- Swiper JS (precisa vir depois do imovel.js) -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    fetch("rodape.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("rodape").innerHTML = data);
+  </script>
+
+  <!-- Script que monta os detalhes -->
+  <script src="imovel.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 </html>
