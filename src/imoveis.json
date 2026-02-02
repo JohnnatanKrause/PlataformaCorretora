@@ -9,7 +9,8 @@
             "estado": "PR",
             "bairro": "Centro",
             "endereco": "Rua Paraguai",
-            "numero": "427 - AP 14 - 1º Andar",
+            "numero": "427",
+            "andar": "1º",    
             "imagem": "../assets/imagens/grand-hudson/ap14/principal.jpg",
             "area_util": 85.14,
             "quartos": 4,
@@ -55,6 +56,7 @@
             "proprietario": "Johnnatan Krause Ribeiro Moreno",
             "telefone": "+55 45 9 8821-3899",
             "email": "johnnatankrause@gmail.com",
+            "ap": "14",
             "matricula": "MAT-14-PR",
             "observacoes": "Apartamento desocupado, Disponível para visitas!"
         }
@@ -69,7 +71,8 @@
         "estado": "PR",
         "bairro": "Centro",
         "endereco": "Rua Paraguai",
-        "numero": "427 - AP 29 - 2º Andar",
+        "numero": "427",        
+        "andar": "2º",
         "imagem": "../assets/imagens/grand-hudson/ap29/principal.jpg",
         "area_util": 85.14,
         "quartos": 3,
@@ -115,6 +118,7 @@
             "proprietario": "Johnnatan Krause Ribeiro Moreno",
             "telefone": "+55 45 9 8821-3899",
             "email": "johnnatankrause@gmail.com",
+            "ap": "29",
             "matricula": "MAT-29-PR",
             "observacoes": "Apartamento desocupado, Disponível para visitas!"
         }
@@ -129,7 +133,8 @@
         "estado": "PR",
         "bairro": "Centro",
         "endereco": "Rua Natal",
-        "numero": "706 - AP 203",
+        "numero": "706",
+        "andar": "2º",
         "imagem": "../assets/imagens/abraham-lincoln/ap203/principal.jpg",
         "area_util": 165,
         "quartos": 3,
@@ -176,6 +181,7 @@
             "proprietario": "Johnnatan Krause Ribeiro Moreno",
             "telefone": "+55 45 9 8821-3899",
             "email": "johnnatankrause@gmail.com",
+            "ap": "203",
             "matricula": "MAT-203-PR",
             "observacoes": "Apartamento desocupado, Disponível para visitas!"
         }
@@ -190,7 +196,8 @@
         "estado": "PR",
         "bairro": "Centro",
         "endereco": "Rua Natal",
-        "numero": "706 - AP 905",
+        "numero": "706",
+        "andar": "9º",
         "imagem": "../assets/imagens/abraham-lincoln/ap905/principal.jpg",
         "area_util": 134,
         "quartos": 3,
@@ -237,6 +244,7 @@
             "proprietario": "Johnnatan Krause Ribeiro Moreno",
             "telefone": "+55 45 9 8821-3899",
             "email": "johnnatankrause@gmail.com",
+            "ap": "905",
             "matricula": "MAT-905-PR",
             "observacoes": "Apartamento desocupado, Disponível para visitas!"
         }
@@ -251,7 +259,8 @@
         "estado": "PR",
         "bairro": "Centro",
         "endereco": "Rua Paranagua",
-        "numero": "199 - AP 801",
+        "numero": "199",
+        "andar": "8º",
         "imagem": "../assets/imagens/palladium-residence/ap801/principal.jpg",
         "area_util": 130,
         "quartos": 4,
@@ -291,6 +300,7 @@
             "proprietario": "Johnnatan Krause Ribeiro Moreno",
             "telefone": "+55 45 9 8821-3899",
             "email": "johnnatankrause@gmail.com",
+            "ap": "801",
             "matricula": "MAT-801-PR",
             "observacoes": "Apartamento desocupado, Disponível para visitas!"
         }
@@ -305,7 +315,8 @@
         "estado": "PR",
         "bairro": "Centro",
         "endereco": "Rua Paranagua",
-        "numero": "199 - AP 1101",
+        "numero": "199",
+        "andar": "11º",
         "imagem": "../assets/imagens/palladium-residence/ap1101/principal.jpg",
         "area_util": 130,
         "quartos": 3,
@@ -345,7 +356,8 @@
         "proprietario": "Johnnatan Krause Ribeiro Moreno",
         "telefone": "+55 45 9 8821-3899",
         "email": "johnnatankrause@gmail.com",
-        "matricula": "MAT-14-PR",
+        "ap": "1101",
+        "matricula": "MAT-1101-PR",
         "observacoes": "Apartamento desocupado, Disponível para visitas!"
     }
     },
@@ -359,7 +371,8 @@
         "estado": "GO",
         "bairro": "Pioneiros",
         "endereco": "Avenida Caminho do Lago",
-        "numero": "300 - AP 302",
+        "numero": "300",
+        "andar": "4º",
         "imagem": "../assets/imagens/ilhas-do-lago/apF24/principal.jpg",
         "area_util": 66.2,
         "quartos": 2,
@@ -396,7 +409,8 @@
         "proprietario": "Johnnatan Krause Ribeiro Moreno",
         "telefone": "+55 45 9 8821-3899",
         "email": "johnnatankrause@gmail.com",
-        "matricula": "MAT-14-PR",
+        "ap": "F24",
+        "matricula": "MAT-F24-PR",
         "observacoes": "Apartamento desocupado, Disponível para visitas!"
     }
     },
@@ -410,7 +424,8 @@
         "estado": "GO",
         "bairro": "Pioneiros",
         "endereco": "Avenida Caminho do Lago",
-        "numero": "300 - AP 204",
+        "numero": "300",
+        "andar": "4º",
         "imagem": "../assets/imagens/ilhas-do-lago/apF24/principal.jpg",
         "area_util": 66.2,
         "quartos": 2,
@@ -447,7 +462,8 @@
         "proprietario": "Johnnatan Krause Ribeiro Moreno",
         "telefone": "+55 45 9 8821-3899",
         "email": "johnnatankrause@gmail.com",
-        "matricula": "MAT-14-PR",
+        "ap": "F24",
+        "matricula": "MAT-F24-PR",
         "observacoes": "Apartamento desocupado, Disponível para visitas!"
     }
     },
@@ -462,6 +478,7 @@
         "bairro": "Jardim das Américas",
         "endereco": "Rua das Palmeiras",
         "numero": "50",
+        "andar": "2º",
         "imagem": "../assets/imagens/casa-jardim-americas/americas50/principal.jpg",
         "area_util": 180,
         "quartos": 4,
@@ -491,7 +508,8 @@
         "proprietario": "Johnnatan Krause Ribeiro Moreno",
         "telefone": "+55 45 9 8821-3899",
         "email": "johnnatankrause@gmail.com",
-        "matricula": "MAT-14-PR",
+        "ap": null,
+        "matricula": "MAT-50-PR",
         "observacoes": "Apartamento desocupado, Disponível para visitas!"
     }
     },
@@ -506,6 +524,7 @@
         "bairro": "Jardim das Américas",
         "endereco": "Rua das Palmeiras",
         "numero": "50",
+        "andar": "2º",
         "imagem": "../assets/imagens/casa-jardim-americas/americas50/principal.jpg",
         "area_util": 180,
         "quartos": 4,
@@ -535,7 +554,8 @@
         "proprietario": "Johnnatan Krause Ribeiro Moreno",
         "telefone": "+55 45 9 8821-3899",
         "email": "johnnatankrause@gmail.com",
-        "matricula": "MAT-14-PR",
+        "ap": null,
+        "matricula": "MAT-50-PR",
         "observacoes": "Apartamento desocupado, Disponível para visitas!"
     }
     },
@@ -549,6 +569,7 @@
         "estado": "GO",
         "bairro": "Centro",
         "endereco": "Av. Brasil",
+        "andar": null,
         "numero": "3000",
         "imagem": "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/principal.jpg",
         "area_util": 400,
@@ -589,7 +610,8 @@
         "proprietario": "Johnnatan Krause Ribeiro Moreno",
         "telefone": "+55 45 9 8821-3899",
         "email": "johnnatankrause@gmail.com",
-        "matricula": "MAT-14-PR",
+        "ap": null,
+        "matricula": "MAT-3000-PR",
         "observacoes": "Apartamento desocupado, Disponível para visitas!"
     }
 },
@@ -604,6 +626,7 @@
         "bairro": "Centro",
         "endereco": "Av. Brasil",
         "numero": "3000",
+        "andar": null,
         "imagem": "../assets/imagens/terreno-avenida-brasil-3000/avbrasil3000/principal.jpg",
         "area_util": 400,
         "quartos": null,
@@ -643,7 +666,8 @@
         "proprietario": "Johnnatan Krause Ribeiro Moreno",
         "telefone": "+55 45 9 8821-3899",
         "email": "johnnatankrause@gmail.com",
-        "matricula": "MAT-14-PR",
+        "ap": null,
+        "matricula": "MAT-3000-PR",
         "observacoes": "Apartamento desocupado, Disponível para visitas!"
     }
 }
