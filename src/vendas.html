@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Imóveis à Venda - Karina Ruiz</title>
   <link rel="stylesheet" href="style.css">
-<link rel="icon" href="../assets/logos/03 - kr-favicon.png" type="image/png">
+  <link rel="icon" href="../assets/logos/03 - kr-favicon.png" type="image/png">
 </head>
 
 <body class="catalogo vendas">
@@ -16,17 +16,25 @@
   <main>
     <section id="vendas">
       <div class="titulo-filtro">
-  <h1 class="page-title">Imóveis à Venda</h1>
-  <div class="filtros">
-    <label for="filtro-vendas">Ordenar por:</label>
-    <select id="filtro-vendas">
-      <option value="preco">Preço (do menor para maior)</option>
-      <option value="quartos">Quartos (do menor para maior)</option>
-      <option value="area">Área útil (do menor para maior)</option>
-    </select>
-  </div>
-</div>
-<div id="lista-vendas"></div>
+        <h1 class="page-title">Imóveis à Venda</h1>
+        <div class="filtros">
+          <label for="filtro-vendas">Ordenar por:</label>
+          <select id="filtro-vendas">
+            <option value="">Ordenar por...</option>
+            <option value="preco">Preço</option>
+            <option value="quartos">Quartos</option>
+            <option value="banheiros">Banheiros</option>
+            <option value="vagas">Vagas de garagem</option>
+            <option value="area">Área útil</option>
+            <option value="andar">Andar</option>
+            <option value="bairro">Bairro</option>
+            <option value="cidade">Cidade</option>
+            <option value="tipo">Tipo de imóvel</option>
+          </select>
+          </select>
+        </div>
+      </div>
+      <div id="lista-vendas"></div>
 
     </section>
   </main>
@@ -47,4 +55,5 @@
 
   <script src="script-vendas.js"></script>
 </body>
+
 </html>

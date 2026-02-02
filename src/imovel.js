@@ -62,7 +62,7 @@ fetch("imoveis.json")
             }
 
             // Monta referência completa para WhatsApp
-            const referencia = `${codigo} - ${dados.tipo_imovel} ${dados.nome} ${unidadeEncontrada ? "AP " + unidadeEncontrada.numero : (dados.numero ? "Nº " + dados.numero : "")}`;
+            const referencia = `${codigo} - ${dados.tipo_imovel} ${dados.nome} ${unidadeEncontrada ? "AP " + unidadeEncontrada.numero : (dados.ap ? "AP " + dados.ap : (dados.numero ? "Nº " + dados.numero : ""))}`;
 
             // Renderização dos detalhes com layout em duas colunas
             container.innerHTML = `
@@ -85,10 +85,11 @@ fetch("imoveis.json")
                 ).toLocaleString("pt-BR")
                 }</p>
 
-                  <p><strong>Localização:</strong> ${dados.endereco ?? ""}, ${dados.numero ?? ""}, ${unidadeEncontrada ? "- AP " + unidadeEncontrada.numero : ""} ${dados.bairro ? dados.bairro + " - " : ""} ${dados.cidade}/${dados.estado} </p>
+                  <p><strong>Localização:</strong> ${dados.endereco ?? ""}, ${dados.numero ?? ""} ${unidadeEncontrada ? "- AP " + unidadeEncontrada.numero : (dados.ap ? "- AP " + dados.ap : "")} ${dados.bairro ? dados.bairro + " - " : ""} ${dados.cidade}/${dados.estado} </p>
                   <p><strong>Quartos:</strong> 🛏️ ${(unidadeEncontrada?.quartos ?? dados.quartos) ?? "-"}</p>
                   <p><strong>Banheiros:</strong> 🚿 ${(unidadeEncontrada?.banheiros ?? dados.banheiros) ?? "-"}</p>
                   <p><strong>Vagas:</strong> 🚗 ${(unidadeEncontrada?.vagas ?? dados.vagas) ?? "-"}</p>
+                  ${dados.andar ? `<p><strong>Andar:</strong> ${dados.andar}</p>` : ""}
                   
                   ${dados.condominio ? `<p><strong>Condomínio:</strong> R$ ${dados.condominio}</p>` : ""}
                   <p>${unidadeEncontrada?.descricao ?? dados.descricao}</p>
@@ -99,7 +100,6 @@ fetch("imoveis.json")
      ". Veja os detalhes aqui: " + window.location.href
    )}" 
    target="_blank">Falar no WhatsApp</a>
-
 
                   ${dados.video ? `
                     <a class="btn-video" href="${dados.video}" target="_blank">
