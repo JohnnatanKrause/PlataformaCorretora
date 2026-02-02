@@ -23,14 +23,13 @@ body.home {
    PERFIL DA CORRETORA
 ========================== */
 body.perfil {
-    height: 100vh;
-    /* sem rolagem desnecessária */
-    overflow: hidden;
-    /* evita rolagem */
-    color: #030109;
-    background:
-        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        /* overlay escuro */
+    min-height: 100vh;       /* altura mínima, mas deixa crescer */
+    overflow-x: hidden;     /* só bloqueia rolagem lateral */
+    overflow-y: auto;      /* permite rolagem vertical */
+    overflow: hidden;     /* evita rolagem lateral */
+    color: #030109;    
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),            /* overlay escuro */
         url('../assets/imagens/cidade-blur.jpg') no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
@@ -370,7 +369,7 @@ main {
 .perfil-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
+    gap: 60px;
     max-width: 1200px;
     margin: 40px auto 120px auto;
     padding: 20px;
@@ -385,15 +384,23 @@ main {
 }
 
 .foto-perfil {
-    width: 260px;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 20px auto;
+    display: block;
     border-radius: 12px;
-    margin-bottom: 20px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .perfil-esquerda h1 {
     font-size: 28px;
     margin-bottom: 10px;
+}
+
+.perfil-esquerda,
+.perfil-centro,
+.perfil-direita {
+    max-width: 100%;
 }
 
 .perfil-esquerda p {
@@ -406,7 +413,13 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
+    margin: 40px auto;
+    max-width: 600px;
+    line-height: 1.6;
 }
+
+
 
 .perfil-centro p {
     font-size: 18px;
@@ -414,14 +427,21 @@ main {
 }
 
 .perfil-centro blockquote {
-    font-size: 18px;
+    font-size: 1.4rem;
     font-style: italic;
-    color: #0077cc;
+    color: #2c3e50;
+    border-left: 4px solid #3498db;
+    padding-left: 12px;
     margin-top: 15px;
+    background: rgba(52, 152, 219, 0.05);
+    border-radius: 6px;
+    padding: 12px 16px;
 }
+
 
 /* Coluna direita: formulário */
 .perfil-direita {
+    width: 100%;
     background: rgba(255, 255, 255, 0.9);
     padding: 20px;
     border-radius: 10px;
@@ -576,4 +596,106 @@ main {
 
 .btn-video:hover {
     background: #005fa3;
+}
+
+.oculto-de-aluguel {
+    display: none;
+}
+
+.credencial {
+    font-size: 0.85rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+.selo {
+    margin-right: 8px;
+    font-size: 1.2rem;
+    color: #3498db;
+}
+
+@media (max-width: 900px) {
+    .perfil-container {
+        grid-template-columns: 1fr;
+        /* força uma coluna só */
+        gap: 20px;
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        /* inclui padding dentro da largura */
+    }
+
+    .perfil-esquerda,
+    .perfil-centro,
+    .perfil-direita {
+        max-width: 100%;
+        /* evita estourar a largura */
+    }
+
+    .foto-perfil {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto 20px auto;
+        display: block;
+    }
+
+    .perfil-direita {
+        width: 100%;
+    }
+
+    .perfil-direita input,
+    .perfil-direita select,
+    .perfil-direita button {
+        width: 100%;
+        box-sizing: border-box;
+        /* evita que padding estoure a largura */
+    }
+
+    .perfil-centro {
+        margin: 20px auto;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .perfil-centro p {
+        font-size: 16px;
+    }
+
+    .perfil-centro blockquote {
+        font-size: 1.1rem;
+        padding: 10px;
+    }
+}
+
+/* regra global para eliminar rolagem lateral */
+html,
+body {
+    overflow-x: hidden;
+}
+
+@media (max-width: 600px) {
+
+    #lista-aluguel,
+    #lista-vendas {
+        grid-template-columns: 1fr;
+        /* força uma coluna só */
+    }
+
+    .card {
+        flex-direction: column;
+        /* imagem em cima, texto embaixo */
+        align-items: center;
+    }
+
+    .card-img img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .card-info {
+        padding: 15px;
+        text-align: center;
+    }
 }
