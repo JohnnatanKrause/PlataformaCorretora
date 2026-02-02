@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karina Ruiz - Corretora de Imóveis</title>
+  <link rel="stylesheet" href="style.css">
+<link rel="icon" href="../assets/logos/03 - kr-favicon.png" type="image/png">
+</head>
+
+<body class="home">
+  <!-- Header com logo e navegação -->
+  <header>
+    <div class="logo-container">
+      <img src="../assets/logos/kr-logo-principal.png" alt="Karina Ruiz - Corretora de Imóveis" class="logo">
+      <nav>
+        <ul>
+          <li><a href="#aluguel">Aluguel</a></li>
+          <li><a href="#vendas">Venda</a></li>
+          <li><a href="admin.html">Área da Corretora</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Seção de imóveis para aluguel -->
+  <section id="aluguel">
+    <h2>Imóveis para Alugar</h2>
+    <div id="lista-aluguel" class="grid"></div>
+  </section>
+
+  <!-- Seção de imóveis para venda -->
+  <section id="vendas">
+    <h2>Imóveis à Venda</h2>
+    <div id="lista-vendas" class="grid"></div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>© 2026 Karina Ruiz - Corretora de Imóveis</p>
+    <p>Desenvolvido por JK Soluções</p>
+  </footer>
+
+  <!-- Script para carregar imóveis -->
+  <script>
+    async function carregarImoveis() {
+      try {
+        const response = await fetch("imoveis.json");
+        const imoveis = await response.json();
+
+        const listaAluguel = document.getElementById("lista-aluguel");
+        const listaVendas = document.getElementById("lista-vendas");
+
+        imoveis.forEach(imovel => {
+          const dados = imovel.dados_publicos;
+          const card = document.createElement("div");
+          card.classList.add("card-imovel");
+
+          card.innerHTML = `
+            <img src="${dados.imagem}" alt="${dados.nome}">
+            <h3>${dados.nome}</h3>
+            <p>${dados.bairro} - ${dados.cidade}/${dados.estado}</p>
+            <p>${dados.descricao}</p>
+            <p><strong>${
+              dados.objetivo === "Venda" 
+                ? "Preço: R$ " + dados.preco_venda.toLocaleString("pt-BR") 
+                : "Aluguel: R$ " + dados.valor_aluguel.toLocaleString("pt-BR")
+            }</strong></p>
+            <a href="${dados.contato.whatsapp}" target="_blank">Falar com Karina</a>
+          `;
+
+          if (dados.objetivo === "Aluguel") {
+            listaAluguel.appendChild(card);
+          } else if (dados.objetivo === "Venda") {
+            listaVendas.appendChild(card);
+          }
+        });
+      } catch (error) {
+        console.error("Erro ao carregar imóveis:", error);
+      }
+    }
+
+    carregarImoveis();
+  </script>
+</body>
+
+</html>
