@@ -6,38 +6,43 @@
   <title>Área da Corretora - Karina Ruiz Barbosa</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="../assets/logos/03 - kr-favicon.png" type="image/png">
-
 </head>
 <body class="admin">
   
   <!-- Cabeçalho padrão -->
-    <div id="cabecalho"></div>
+  <div id="cabecalho"></div>
 
   <!-- Login simples -->
   <main>
-    <h1>Área Restrita da Corretora</h1>
+    <h1>
+      Área Restrita da Corretora
+      <button id="btn-adicionar" class="btn-adicionar" style="display:none;">Adicionar Imóvel</button>
+      <button id="btn-sair" class="btn-sair" style="display:none;">Sair</button>
+    </h1>
+
     <div id="login-container">
       <input type="password" id="senha" placeholder="Digite a senha">
       <button onclick="login()">Entrar</button>
     </div>
 
-    <div id="admin-container" class="grid" style="display:none;"></div>
+    <!-- Container dos cards -->
+    <div id="admin-container" class="admin-grid" style="display:none;"></div>
   </main>
 
-    <!-- Rodapé padrão -->
-    <div id="rodape"></div>
+  <!-- Rodapé padrão -->
+  <div id="rodape"></div>
 
+  <script>
+    // Inclusão automática do cabeçalho e rodapé
+    fetch("cabecalho.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("cabecalho").innerHTML = data);
 
-    <script>
+    fetch("rodape.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("rodape").innerHTML = data);
+  </script>
 
-        // Inclusão automática do cabeçalho e rodapé
-        fetch("cabecalho.html")
-            .then(res => res.text())
-            .then(data => document.getElementById("cabecalho").innerHTML = data);
-
-        fetch("rodape.html")
-            .then(res => res.text())
-            .then(data => document.getElementById("rodape").innerHTML = data);
-    </script>
+  <script src="admin.js"></script>
 </body>
 </html>
