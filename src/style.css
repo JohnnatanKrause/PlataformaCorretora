@@ -520,7 +520,7 @@ main {
 /* Ajuste dos cards para ficarem maiores */
 .card {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
