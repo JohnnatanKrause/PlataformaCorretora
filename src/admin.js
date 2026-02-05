@@ -1,20 +1,27 @@
 let logado = false;
 
-function login() {
-    const senha = document.getElementById("senha").value;
-    if (senha === "karina123") {
-        logado = true;
-        document.getElementById("login-container").style.display = "none";
-        document.getElementById("admin-container").style.display = "flex";
-        document.getElementById("btn-adicionar").style.display = "inline-block";
-        document.getElementById("btn-sair").style.display = "inline-block";
-        carregarImoveis();
-    } else {
-        alert("Senha incorreta!");
-    }
-}
+function login() { 
+    const senha = document.getElementById("senha").value; 
+    if (senha === "karina123") { 
+        logado = true; 
+        document.getElementById("login-container").style.display = "none"; 
+        document.getElementById("admin-container").style.display = "flex"; 
+        document.getElementById("btn-adicionar").style.display = "inline-block"; 
+        document.getElementById("btn-sair").style.display = "inline-block"; 
+        carregarImoveis(); 
+    } else { 
+        alert("Senha incorreta!"); 
+    } 
+} 
 
-document.getElementById("btn-adicionar").onclick = adicionarImovel;
+// 🔑 Listener para o formulário de login
+document.getElementById("form-login").addEventListener("submit", function(e) { 
+    e.preventDefault(); // evita recarregar a página
+    login();            // chama a função de login
+});
+
+// Botões da área restrita
+document.getElementById("btn-adicionar").onclick = adicionarImovel; 
 document.getElementById("btn-sair").onclick = sair;
 
 function sair() {
@@ -24,6 +31,7 @@ function sair() {
     document.getElementById("btn-sair").style.display = "none";
     document.getElementById("login-container").style.display = "flex";
 }
+
 
 function carregarImoveis() {
     fetch("imoveis.json")
@@ -130,33 +138,65 @@ function adicionarImovel() {
   `;
 }
 function salvarNovo() {
+    // Função para gerar código automático
+    function gerarCodigo() {
+        const numero = Date.now().toString().slice(-4);
+        return "IMV" + numero;
+    }
+
+    // Função para gerar matrícula fictícia
+    function gerarMatricula() {
+        return "MAT" + Date.now().toString().slice(-5);
+    }
+
     const novo = {
+        codigo: gerarCodigo(),
         dados_publicos: {
-            tipo_imovel: document.getElementById("novoTipo").value,
-            objetivo: document.getElementById("novoObjetivo").value,
-            nome: document.getElementById("novoNome").value,
-            cidade: document.getElementById("novoCidade").value,
-            estado: document.getElementById("novoEstado").value,
-            bairro: document.getElementById("novoBairro").value,
-            endereco: document.getElementById("novoEndereco").value,
-            numero: document.getElementById("novoNumero").value,
-            andar: document.getElementById("novoAndar").value,
-            imagem: document.getElementById("novoImagem").value,
-            area_util: document.getElementById("novoArea").value,
-            quartos: document.getElementById("novoQuartos").value,
-            banheiros: document.getElementById("novoBanheiros").value,
-            vagas: document.getElementById("novoVagas").value,
-            garagens: document.getElementById("novoGaragens").value.split(","),
-            preco_venda: document.getElementById("novoPrecoVenda").value,
-            condominio: document.getElementById("novoCondominio").value,
-            iptu: document.getElementById("novoIptu").value,
-            descricao: document.getElementById("novoDescricao").value
+            tipo_imovel: document.getElementById("novoTipo").value || null,
+            objetivo: document.getElementById("novoObjetivo").value || null,
+            nome: document.getElementById("novoNome").value || null,
+            cidade: document.getElementById("novoCidade").value || null,
+            estado: document.getElementById("novoEstado").value || null,
+            bairro: document.getElementById("novoBairro").value || null,
+            endereco: document.getElementById("novoEndereco").value || null,
+            numero: document.getElementById("novoNumero").value || null,
+            andar: document.getElementById("novoAndar").value || null,
+            imagem: document.getElementById("novoImagem").value || null,
+            area_util: document.getElementById("novoArea").value || null,
+            area_total: null, // campo extra para manter padrão
+            quartos: document.getElementById("novoQuartos").value || null,
+            suites: null, // campo extra
+            banheiros: document.getElementById("novoBanheiros").value || null,
+            vagas: document.getElementById("novoVagas").value || null,
+            garagens: document.getElementById("novoGaragens").value
+                ? document.getElementById("novoGaragens").value.split(",")
+                : null,
+            preco_venda: document.getElementById("novoPrecoVenda").value
+                ? Number(document.getElementById("novoPrecoVenda").value)
+                : null,
+            condominio: document.getElementById("novoCondominio").value
+                ? Number(document.getElementById("novoCondominio").value)
+                : null,
+            iptu: document.getElementById("novoIptu").value
+                ? Number(document.getElementById("novoIptu").value)
+                : null,
+            descricao: document.getElementById("novoDescricao").value || null,
+            fotos: [], // inicia vazio
+            video: null,
+            contato: {
+                "corretor(a)": "Karina Ruiz Barbosa",
+                telefone: "+55 45 9 3300-2811",
+                whatsapp: "https://wa.me/5545933002811"
+            }
         },
         dados_internos: {
-            proprietario: document.getElementById("novoProprietario").value,
-            telefone: document.getElementById("novoTelefone").value,
-            email: document.getElementById("novoEmail").value,
+            proprietario: document.getElementById("novoProprietario").value || null,
+            telefone: document.getElementById("novoTelefone").value || null,
+            email: document.getElementById("novoEmail").value || null,
+            ap: null,
+            matricula: gerarMatricula(),
             observacoes: document.getElementById("novoObservacoes").value
+                || `Última atualização: ${new Date().toLocaleString()}`
         }
     };
 
@@ -182,8 +222,8 @@ function verDetalhes(codigo) {
             const container = document.getElementById("admin-container");
             container.innerHTML = `
         <div class="card-admin" style="max-width:800px; margin:auto;">
-          <img src="${dados.imagem}" alt="${dados.nome}" style="width:100%; height:300px; object-fit:cover; border-radius:8px;">
-          <div class="card-body">
+        <img src="${dados.imagem}" alt="${dados.nome}" style="width:100%; height:300px; object-fit:cover; border-radius:8px;">
+        <div class="card-body">
             <h2>${dados.nome} (${imovel.codigo})</h2>
             <p><strong>Tipo:</strong> ${dados.tipo_imovel}</p>
             <p><strong>Objetivo:</strong> ${dados.objetivo}</p>
